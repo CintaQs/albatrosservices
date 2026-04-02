@@ -251,7 +251,8 @@ const currentYear = new Date().getFullYear();
       text-align: center;
     }
     .footer-bottom {
-      padding-bottom: 2.5rem; /* Ensure bottom browser toolbar on mobile doesn't occlude links */
+      padding-bottom: calc(4.5rem + env(safe-area-inset-bottom)) !important; /* Definitively clear iOS Safari bottom toolbar */
+      padding-top: 2rem;
     }
     .footer-legal-links-wrapper {
       flex-direction: column;
