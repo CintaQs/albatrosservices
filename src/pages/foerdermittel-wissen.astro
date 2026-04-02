@@ -51,14 +51,16 @@ const description = "Alle Seiten von Albatros Services im Überblick – Ihr spe
   <section class="sm-hero" id="top" aria-label="Seitenübersicht Albatros Services">
     <div class="container sm-hero__inner">
       <div class="sm-hero__text">
-        <span class="sm-hero__eyebrow">albatrosservices.de</span>
+        <div class="sm-hero__eyebrows">
+          <span class="sm-hero__eyebrow">albatrosservices.de</span>
+          <span class="sm-hero__eyebrow sm-hero__eyebrow--secondary">Fachportal Arbeitgeber</span>
+        </div>
         <h1 class="sm-hero__h1">Übersicht & Wissen</h1>
         <p class="sm-hero__desc">Alle Seiten, Ressourcen und tiefgreifendes Expertenwissen – strukturiert für Sie gebündelt.</p>
         <!-- Mini-TOC -->
         <nav class="sm-toc" aria-label="Seitennavigation">
           <a href="#hauptseiten" class="sm-toc__link">Hauptseiten</a>
           <a href="#rechtliches" class="sm-toc__link">Rechtliches</a>
-          <a href="#technisches" class="sm-toc__link">Technisches</a>
           <a href="#einblicke" class="sm-toc__link">Einblicke</a>
         </nav>
       </div>
@@ -359,17 +361,27 @@ const description = "Alle Seiten von Albatros Services im Überblick – Ihr spe
     justify-content: space-between;
     gap: 2rem;
     flex-wrap: wrap;
+  .sm-hero__eyebrows {
+    display: flex;
+    gap: 0.6rem;
+    margin-bottom: 0.6rem; /* Tightened visually to the H1 */
+    flex-wrap: wrap; /* Allows safe stacking on tiny screens */
   }
   .sm-hero__eyebrow {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     font-size: 0.72rem; font-weight: 800;
     letter-spacing: 0.12em; text-transform: uppercase;
     color: var(--c-accent); 
-    margin-bottom: 1rem;
     background: rgba(255, 107, 53, 0.15); /* premium pill styling */
     border: 1px solid rgba(255, 107, 53, 0.3);
-    padding: 0.35rem 0.85rem;
+    padding: 0.3rem 0.85rem;
     border-radius: 2rem;
+  }
+  .sm-hero__eyebrow--secondary {
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.15);
   }
   .sm-hero__h1 {
     font-size: clamp(2.5rem, 5vw, 4rem) !important;
