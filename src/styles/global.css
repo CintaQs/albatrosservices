@@ -239,7 +239,9 @@ p {
   cursor: pointer;
   border: none;
   font-family: inherit;
-  white-space: nowrap;
+  white-space: normal; /* Replaced nowrap to allow long text wrapping on mobile */
+  text-align: center;
+  line-height: 1.3;
 }
 
 .btn-primary {
