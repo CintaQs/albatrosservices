@@ -49,19 +49,20 @@ const currentYear = new Date().getFullYear();
     <div class="container footer-bottom-container">
       <p>&copy; {currentYear} Albatros Services. Alle Rechte vorbehalten.</p>
       <nav aria-label="Rechtliche Navigation">
-        <ul class="footer-legal-links">
-          <li><a href="/impressum">Impressum</a></li>
-          <li><a href="/datenschutz">Datenschutz</a></li>
-          <li><a href="/barrierefreiheit">Barrierefreiheit</a></li>
-          <li class="footer-break" aria-hidden="true"></li>
-          <li><a href="/foerdermittel-wissen">Fördermittel-Wissen</a></li>
-          <li class="btt-li">
+        <div class="footer-legal-links-wrapper">
+          <div class="footer-legal-group">
+            <a href="/impressum" class="legal-link">Impressum</a>
+            <a href="/datenschutz" class="legal-link">Datenschutz</a>
+            <a href="/barrierefreiheit" class="legal-link">Barrierefreiheit</a>
+          </div>
+          <div class="footer-legal-group">
+            <a href="/foerdermittel-wissen" class="legal-link">Fördermittel-Wissen</a>
             <button id="global-btt" class="btt-inline" aria-label="Zurück nach oben">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
               Nach oben
             </button>
-          </li>
-        </ul>
+          </div>
+        </div>
       </nav>
     </div>
   </div>
@@ -217,24 +218,21 @@ const currentYear = new Date().getFullYear();
     opacity: 0.7;
   }
 
-  .footer-legal-links {
-    list-style-type: none !important;
-    padding: 0;
-    margin: 0;
-    display: flex !important;
-    flex-direction: row !important;
+  .footer-legal-links-wrapper {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 1.5rem;
+  }
+
+  .footer-legal-group {
+    display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
   }
 
-  .footer-legal-links li {
-    list-style-type: none !important;
-    margin: 0;
-    padding: 0;
-  }
-
-  .footer-legal-links a {
+  .legal-link {
     color: var(--c-white);
     text-decoration: none;
     font-size: 0.8rem;
@@ -242,12 +240,8 @@ const currentYear = new Date().getFullYear();
     transition: opacity var(--transition-fast);
   }
 
-  .footer-legal-links a:hover {
+  .legal-link:hover {
     opacity: 1;
-  }
-
-  .footer-break {
-    display: none;
   }
 
   @media (max-width: 768px) {
@@ -259,35 +253,23 @@ const currentYear = new Date().getFullYear();
     .footer-bottom {
       padding-bottom: 2.5rem; /* Ensure bottom browser toolbar on mobile doesn't occlude links */
     }
-    .footer-legal-links {
-      flex-direction: row !important;
-      flex-wrap: wrap !important;
+    .footer-legal-links-wrapper {
+      flex-direction: column;
       justify-content: center;
-      gap: 1.25rem 1rem;
       align-items: center;
+      gap: 1rem;
     }
-    .footer-break {
-      display: block;
-      flex-basis: 100%;
-      height: 0;
-      margin: 0;
-      padding: 0;
+    .footer-legal-group {
+      justify-content: center;
+      gap: 0.75rem 1rem; /* tighter gaps for 320px mobile screens */
     }
-    .footer-legal-links .btt-li {
-      margin-top: 0;
+    .btt-inline {
       padding-left: 1rem;
       border-left: 1px solid rgba(255, 255, 255, 0.2);
     }
   }
 
   /* Back to Top Inline Component */
-  .footer-legal-links .btt-li {
-    padding-left: 1.5rem;
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
-    display: flex;
-    align-items: center;
-  }
-  
   .btt-inline {
     display: inline-flex;
     align-items: center;
