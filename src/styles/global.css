@@ -61,6 +61,10 @@
   padding: 0;
 }
 
+html, body {
+  overflow-x: hidden; /* Strict vertical-only boundary */
+}
+
 html {
   font-family: var(--font-body);
   color: var(--c-text);
