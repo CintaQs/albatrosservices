@@ -198,6 +198,11 @@
     color: var(--c-primary);
     text-decoration: underline;
   }
+  @media (max-width: 768px) {
+    .info-block a {
+      word-break: break-all; /* Prevent 35 character email from bursting grid bounds */
+    }
+  }
   
   .contact-form-wrapper {
     background: var(--c-surface);
@@ -205,6 +210,11 @@
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
     border: 1px solid var(--c-border);
+  }
+  @media (max-width: 768px) {
+    .contact-form-wrapper {
+      padding: 1.5rem; /* Reclaim space for inputs on tiny phone screens */
+    }
   }
   .contact-form h3 {
     margin-top: 0;
