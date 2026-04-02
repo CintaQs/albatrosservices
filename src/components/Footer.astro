@@ -251,8 +251,18 @@ const currentYear = new Date().getFullYear();
       justify-content: center;
       text-align: center;
     }
+    .footer-bottom {
+      padding-bottom: 2.5rem; /* Ensure bottom browser toolbar on mobile doesn't occlude links */
+    }
     .footer-legal-links {
-      justify-content: center;
+      flex-direction: column !important;
+      gap: 1rem;
+      align-items: center;
+    }
+    .footer-legal-links .btt-li {
+      margin-top: 1rem;
+      padding-left: 0;
+      border-left: none;
     }
   }
 
