@@ -243,6 +243,12 @@
       flex-wrap: wrap; /* Override for desktop */
       gap: 1.5rem;
       align-items: center;
+      justify-content: flex-start;
+    }
+  }
+  @media (max-width: 599px) {
+    .hero-trust-row {
+      align-items: center; /* Center checkmarks cleanly on mobile */
     }
   }
   
@@ -338,8 +344,14 @@
   @media (max-width: 1024px) {
     .visual-3d-wrapper {
       transform: none !important;
-      aspect-ratio: 4/3; /* Wider on mobile to save height */
+      aspect-ratio: 4/3; /* Wider on tablet to save height */
       max-height: 400px;
+    }
+  }
+  @media (max-width: 768px) {
+    .visual-3d-wrapper {
+      aspect-ratio: 16/9; /* Ultra wide on mobile to bring buttons above the fold */
+      max-height: 250px;
     }
   }
 

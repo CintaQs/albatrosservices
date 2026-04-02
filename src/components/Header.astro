@@ -154,11 +154,12 @@
     }
     .top-bar-contact {
       flex-direction: column;
-      gap: 0.5rem;
+      gap: 0.25rem;
       align-items: center;
     }
     .top-bar-contact a {
       font-size: 0.8rem;
+      padding: 0.25rem 0; /* Touch targets for phone/email */
     }
   }
 
@@ -227,7 +228,8 @@
     font-size: 1.05rem;
     text-decoration: none;
     position: relative;
-    padding: 0.5rem 0;
+    padding: 0.5rem 1rem; /* Expanded for better touch target */
+    display: block; /* Ensure full click area */
     transition: color var(--transition-fast);
   }
   

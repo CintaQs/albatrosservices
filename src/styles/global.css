@@ -18,9 +18,9 @@
   --spacing-xs: clamp(0.5rem, 1vw, 0.75rem);
   --spacing-sm: clamp(0.75rem, 2vw, 1.25rem);
   --spacing-md: clamp(1.25rem, 3vw, 2rem);
-  --spacing-lg: clamp(2rem, 4vw, 3rem);
-  --spacing-xl: clamp(3.5rem, 6vw, 5rem);
-  --spacing-2xl: clamp(5rem, 8vw, 8rem);
+  --spacing-lg: clamp(1.5rem, 4vw, 3rem);
+  --spacing-xl: clamp(2.5rem, 6vw, 5rem);
+  --spacing-2xl: clamp(3rem, 8vw, 8rem);
   /* 80px to 128px */
 
   /* Organic GPU-Accelerated Easing */
@@ -98,7 +98,7 @@ strong {
 }
 
 h1 {
-  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-size: clamp(2rem, 6vw, 4.5rem);
   font-weight: 800;
   letter-spacing: -0.03em;
   /* Cinematic tight tracking */
@@ -118,7 +118,7 @@ h4 {
 }
 
 h2.section-title {
-  font-size: clamp(2rem, 3vw, 3rem);
+  font-size: clamp(1.75rem, 4vw, 3rem);
   font-weight: 700;
   letter-spacing: -0.02em;
   margin-bottom: 0;
