@@ -9,7 +9,7 @@
         Exklusiver Fördermittel-Service
       </div>
       
-      <h1 class="reveal-on-scroll grid-title">Wir drehen Ihnen<br>den <span class="text-accent">Geldhahn auf</span></h1>
+      <h1 class="reveal-on-scroll grid-title">Wir drehen Ihnen<br class="br-desktop">den <span class="text-accent">Geldhahn auf</span></h1>
       
       <div class="hero-visual reveal-on-scroll reveal-delay-1 grid-visual">
          <div class="visual-3d-wrapper">
@@ -197,6 +197,11 @@
     .hero-actions { 
       justify-content: flex-start; 
       flex-wrap: wrap; /* Only allow wrap on tablet/mobile */
+    }
+  }
+  @media (max-width: 768px) {
+    .br-desktop {
+      display: none;
     }
   }
   @media (max-width: 600px) {
