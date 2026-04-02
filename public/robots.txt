@@ -1,0 +1,29 @@
+# GLOBAL SITEMAP
+Sitemap: https://albatrosservices.de/sitemap-index.xml
+
+# TIER-1 SEARCH ENGINES & AI/LLM BOTS GRANTED FULL ACCESS
+# (GEO - Generative Engine Optimization for ChatGPT, Claude, Perplexity)
+User-agent: *
+Allow: /
+Disallow: /contact.php
+
+
+# BLOCK AGGRESSIVE SEO SPIDERS & BANDWIDTH HOGS
+User-agent: AhrefsBot
+User-agent: AhrefsSiteAudit
+User-agent: SemrushBot
+User-agent: MJ12bot
+User-agent: DotBot
+User-agent: BLEXBot
+User-agent: PetalBot
+User-agent: MegaIndex
+User-agent: SEOkicks
+User-agent: Screaming Frog SEO Spider
+Disallow: /
+
+# Context files
+# humans.txt: https://albatrosservices.de/humans.txt
+# llms.txt: https://albatrosservices.de/llms.txt
+
+# HUMAN NAVIGATION
+# Zurueck zur Startseite: https://albatrosservices.de/

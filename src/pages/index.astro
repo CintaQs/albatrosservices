@@ -1,0 +1,91 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import WhyUs from '../components/WhyUs.astro';
+import Examples from '../components/Examples.astro';
+import Steps from '../components/Steps.astro';
+import FundingTypes from '../components/FundingTypes.astro';
+import FAQ from '../components/FAQ.astro';
+import Contact from '../components/Contact.astro';
+---
+
+<Layout title="Albatros Services | Lohnkostenzuschüsse als Reingewinn">
+  <!-- Schema.org Deep Knowledge Graph (LocalBusiness/FinancialService scoped ONLY to homepage) -->
+  <script type="application/ld+json" is:inline>
+    {
+      "@context": "https://schema.org",
+      "@type": ["FinancialService", "ProfessionalService"],
+      "name": "Albatros Services",
+      "url": "https://albatrosservices.de",
+      "logo": "https://albatrosservices.de/favicon.svg",
+      "description": "Lohnkostenzuschüsse als Reingewinn - jeden Monat auf Ihrem Konto. Wir realisieren Ihre zustehenden Fördermittel völlig risikofrei nach SGB III.",
+      "telephone": "+49 30 232538776",
+      "email": "personalprojekt@albatrosservices.de",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+49-30-232538776",
+          "contactType": "customer service",
+          "availableLanguage": "German"
+        }
+      ],
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "upgrade4you GmbH"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "James-Franck-Str. 21",
+        "addressLocality": "Berlin",
+        "postalCode": "12489",
+        "addressCountry": "DE"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Germany"
+      },
+      "knowsAbout": [
+        "SGB III",
+        "Eingliederungszuschuss (EGZ)",
+        "Qualifizierungsförderung",
+        "Lohnkostenzuschuss",
+        "Vermittlungshemmnisse",
+        "Agentur für Arbeit Förderung"
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Beantragung Eingliederungszuschuss (EGZ)",
+            "description": "Komplettes Antragsmanagement für Lohnkostenzuschüsse nach § 16 SGB III bei Neueinstellungen."
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "0.00",
+            "priceCurrency": "EUR",
+            "description": "100% erfolgsbasiert. Kein Honorar ohne Auszahlung durch die Agentur für Arbeit."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Kostenfreie Potenzialanalyse",
+            "description": "Prüfung der Förderfähigkeit von Vakanzen und Kandidaten innerhalb von 48 Stunden."
+          },
+          "price": "0.00",
+          "priceCurrency": "EUR"
+        }
+      ]
+    }
+  </script>
+
+	<Hero />
+	<Examples />
+	<WhyUs />
+	<Steps />
+	<FundingTypes />
+	<FAQ />
+	<Contact />
+</Layout>

@@ -1,0 +1,51 @@
+/* TEAM */
+
+  /* Client */
+  Company: Albatros Services
+  Legal entity: upgrade4you GmbH
+  Director: Dr. Eberhard Spittler
+  Director: Joern Wege
+  Location: Berlin-Adlershof & Hamburg, Germany
+  Website: https://albatrosservices.de
+
+  /* External Digital Agency */
+  Agency: MyQuests Online Marketing
+  Role: Digital Strategy, Online Marketing & Website Implementation
+  Site: https://myquests.org
+
+  /* Managing Director, MyQuests Online Marketing */
+  Name: Olivier Jacob
+  Title: CEO & Founder
+  Business: Olivier Jacob (Einzelunternehmer)
+  Site: https://olivierjacob.com
+  Location: Hamburg, Germany
+
+
+/* SITE */
+
+  Last update: 2026/03/23
+  Language: de-DE
+  Standards: HTML5, WCAG 2.1 AA
+  Technology: Astro v6, Vanilla CSS, JavaScript
+  Schema.org: FinancialService, FAQPage, BreadcrumbList, SiteNavigationElement
+  Sitemap: https://albatrosservices.de/sitemap-index.xml
+
+
+/* CONTACT */
+
+  Email: personalprojekt@albatrosservices.de
+  Phone: +49 30 232538776
+  Address: James-Franck-Str. 21, 12489 Berlin, Germany
+
+
+/* CONTEXT */
+
+  Industry: B2B Financial Consulting
+  Specialisation: Eingliederungszuschuss (EGZ) §16 SGB III
+  Specialisation: Qualifizierungsförderung §§81-87 SGB III
+  Service area: Germany (nationwide)
+  Model: 100% success-based, no upfront fees
+
+/* NAVIGATION */
+
+  Zurueck zur Startseite: https://albatrosservices.de/

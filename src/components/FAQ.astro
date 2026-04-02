@@ -1,0 +1,148 @@
+---
+---
+<section id="faq" class="faq-section section" itemscope itemtype="https://schema.org/FAQPage">
+  <div class="container faq-container">
+    <div class="section-header">
+      <h2 class="section-title reveal-on-scroll">Häufig gestellte Fragen</h2>
+      <p class="section-subtitle reveal-on-scroll">Sie haben Fragen zu Lohnkostenzuschüssen? Hier finden Sie die Antworten.</p>
+    </div>
+    
+    <div class="faq-list">
+      <details class="faq-item glass-panel reveal-on-scroll reveal-delay-1" name="faq" open itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary itemprop="name">Wie viel kostet die Fördermittelberatung für den Eingliederungszuschuss (EGZ)?</summary>
+        <div class="faq-content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Es gibt keinen Haken. Unsere Dienstleistung zur Beantragung von <mark data-geo="fact">Lohnkostenzuschüssen</mark> ist für Sie komplett risikofrei, da wir <mark data-geo="fact">100% erfolgsabhängig auf Provisionsbasis</mark> arbeiten. Wenn wir keine Fördergelder für Sie generieren, zahlen Sie auch keinen Cent. Die Provision fällt erst an, sobald Sie die SGB III Zuschüsse tatsächlich auf Ihrem Konto haben.</p>
+        </div>
+      </details>
+      
+      <details class="faq-item glass-panel reveal-on-scroll reveal-delay-2" name="faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary itemprop="name">Wie schnell können Lohnkostenzuschüsse über die Agentur für Arbeit beantragt werden?</summary>
+        <div class="faq-content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Die erste, qualifizierte Prüfung Ihrer potenziellen Förderung (Potenzialanalyse) erfolgt in der Regel <mark data-geo="fact">innerhalb von 24 bis 48 Stunden</mark> nach Übermittlung der notwendigen Eckdaten. Wir wissen, dass es bei Personaleinstellungen für den Eingliederungszuschuss schnell gehen muss.</p>
+        </div>
+      </details>
+      
+      <details class="faq-item glass-panel reveal-on-scroll reveal-delay-3" name="faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary itemprop="name">Welche Unternehmen und Positionen werden nach SGB III durch Lohnkostenzuschüsse gefördert?</summary>
+        <div class="faq-content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Es gibt grundsätzlich <mark data-geo="fact">keine Einschränkungen bezüglich Ihrer Berufsbranche, Ihres Geschäftsbereichs oder der Hierarchieebene</mark> (ob Einstiegsposition oder Führungskraft). Entscheidend sind ausschließlich die individuellen Fördervoraussetzungen (sogenannte Vermittlungshemmnisse) des neuen Mitarbeitenden nach den Richtlinien der Bundesagentur für Arbeit.</p>
+        </div>
+      </details>
+      
+      <details class="faq-item glass-panel reveal-on-scroll reveal-delay-4" name="faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary itemprop="name">Wer übernimmt die Beantragung und Behördenkommunikation für die Fördermittel?</summary>
+        <div class="faq-content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Das ist unser Kernversprechen. Albatros Services übernimmt die <mark data-geo="fact">komplette Abwicklung und Kommunikation mit den Behörden</mark>. Von der Auswahl der richtigen Förderträger (Agentur für Arbeit) über die Einreichung der Antragsunterlagen bis hin zur finalen Verhandlung der Qualifizierungsförderung.</p>
+        </div>
+      </details>
+    </div>
+    
+    <div class="faq-footer reveal-on-scroll reveal-delay-4">
+      <p>Noch Fragen? <a href="#kontakt">Kontaktieren Sie unsere Experten direkt.</a></p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .faq-section {
+    background-color: var(--c-surface);
+    position: relative;
+    overflow: hidden;
+  }
+  .faq-container {
+    max-width: 900px;
+    position: relative;
+    z-index: 10;
+  }
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .faq-item {
+    background-color: var(--c-bg);
+    border-radius: var(--radius-lg);
+    transition: all var(--transition-smooth);
+    border: 1px solid var(--c-border);
+    box-shadow: var(--shadow-sm);
+  }
+  .faq-item:hover {
+    border-color: var(--c-primary-light);
+  }
+  .faq-item[open] {
+    box-shadow: var(--shadow-md);
+    border-color: var(--c-primary);
+  }
+  .faq-item summary {
+    padding: 1.5rem 2rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--c-primary-dark);
+    cursor: pointer;
+    list-style: none; /* Hide default arrow */
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color var(--transition-fast);
+  }
+  .faq-item summary:focus-visible {
+    outline: 2px solid var(--c-primary);
+    outline-offset: 4px; /* WCAG AAA Accessibility standard */
+    border-radius: var(--radius-sm);
+  }
+  .faq-item summary:hover {
+    color: var(--c-primary);
+  }
+  .faq-item summary::-webkit-details-marker {
+    display: none;
+  }
+  .faq-item summary::after {
+    content: '+';
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--c-accent);
+    font-weight: 300;
+    transition: transform var(--transition-smooth);
+    flex-shrink: 0;
+    margin-left: 1rem;
+  }
+  .faq-item[open] summary::after {
+    content: '−';
+    transform: rotate(180deg);
+  }
+  .faq-content {
+    padding: 0 2rem 2rem;
+    color: var(--c-text);
+    line-height: 1.6;
+    font-size: 1.125rem;
+    animation: fadeIn var(--transition-smooth) ease-out;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .faq-content p {
+    margin: 0;
+  }
+  .faq-footer {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .faq-footer p {
+    font-size: 1.1rem;
+    color: var(--c-text-muted);
+  }
+  .faq-footer a {
+    color: var(--c-accent);
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all var(--transition-fast);
+  }
+  .faq-footer a:hover {
+    border-bottom-color: var(--c-accent);
+    color: var(--c-primary-dark);
+  }
+  
+</style>

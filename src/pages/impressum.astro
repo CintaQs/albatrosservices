@@ -1,0 +1,129 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Impressum | Albatros Services" description="Impressum und gesetzliche Pflichtangaben der upgrade4you GmbH – Betreiber von Albatros Services, albatrosservices.de.">
+  <div class="container section legal-section">
+    <h1 class="section-title">Impressum</h1>
+    <p class="legal-subtitle">Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz)</p>
+    
+    <div class="legal-content">
+      <h2>Unternehmensangaben</h2>
+      <p>
+        <strong>upgrade4you GmbH</strong><br>
+        Deichstraße 1<br>
+        20459 Hamburg
+      </p>
+
+      <h2>Albatros Services Projektbüro</h2>
+      <p>
+        James-Franck-Str. 21<br>
+        12489 Berlin-Adlershof
+      </p>
+      
+      <h2>Kontakt</h2>
+      <p>
+        <strong>Albatros Services:</strong><br>
+        Telefon: 030 / 2325387-76<br>
+        E-Mail: <a href="mailto:personalprojekt@albatrosservices.de">personalprojekt@albatrosservices.de</a>
+      </p>
+      <p>
+        <strong>Hauptsitz upgrade4you GmbH:</strong><br>
+        Telefon: +49 40 53308530<br>
+        E-Mail: <a href="mailto:info@upgrade4you.de">info@upgrade4you.de</a>
+      </p>
+      
+      <h2>Vertretungsberechtigte Geschäftsführung</h2>
+      <p>Geschäftsführer: Dr. Eberhard Spittler und Jörn Wege</p>
+      
+      <h2>Aufsichtsbehörde</h2>
+      <p>Bundesagentur für Arbeit</p>
+      
+      <h2>Registereintrag</h2>
+      <p>
+        Registergericht: Amtsgericht Hamburg, HRB 161712<br>
+        Umsatzsteuer-Identifikationsnummer: DE329121051
+      </p>
+      
+      <h2>Inhaltlich verantwortlich gemäß § 18 Abs. 2 MStV</h2>
+      <p>
+        Dr. Eberhard Spittler und Jörn Wege<br>
+        (Geschäftsführer der upgrade4you GmbH)<br>
+        Deichstraße 1<br>
+        20459 Hamburg
+      </p>
+
+      <h2>EU-Streitschlichtung</h2>
+      <p>
+        Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: 
+        <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a>.<br>
+        Unsere E-Mail-Adresse finden Sie oben im Impressum.
+      </p>
+
+      <h2>Verbraucher&shy;streit&shy;beilegung / Universal&shy;schlichtungs&shy;stelle</h2>
+      <p>
+        Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+      </p>
+
+      <h2>Homepage Umsetzung und Pflege</h2>
+      <p>
+        <strong>Website, SEO und Online Marketing</strong> – Konzeption, Design-Entwicklung, Suchmaschinenoptimierung (SEO) und die kontinuierliche technische Betreuung dieses Webauftritts erfolgen durch den <a href="https://olivierjacob.com/" target="_blank" rel="noopener noreferrer">Website Designer Hamburg</a> Olivier Jacob – Gründer und Inhaber der Performance-Agentur <a href="https://myquests.org/" target="_blank" rel="noopener noreferrer">MyQuests Online Marketing</a>. Für direkte geschäftliche Kontaktaufnahmen oder Vernetzung besuchen Sie gerne sein <a href="https://www.linkedin.com/in/olivier-jd-jacob/" target="_blank" rel="nofollow noopener noreferrer">LinkedIn</a> Profil.
+      </p>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .legal-section {
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+    min-height: 60vh;
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .legal-subtitle {
+    color: var(--c-text-muted, #6b7280);
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-lg);
+  }
+  /* Prevent global hero-scale h1 (up to 4.5rem) on legal pages */
+  .legal-section .section-title {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    margin-bottom: 1rem;
+    text-align: left;
+    letter-spacing: -0.01em;
+  }
+  .legal-section .section-title::after {
+    display: none;
+  }
+  .legal-content {
+    background-color: var(--c-surface);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+  }
+  .legal-content h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--c-primary-dark);
+    border-bottom: 1px solid var(--c-border);
+    padding-bottom: 0.25rem;
+  }
+  .legal-content h2:first-of-type {
+    margin-top: 0;
+  }
+  .legal-content p {
+    color: var(--c-text);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  .legal-content a {
+    color: var(--c-primary);
+    text-decoration: underline;
+  }
+  .legal-content a:hover {
+    color: var(--c-accent);
+  }
+</style>

@@ -1,0 +1,352 @@
+---
+---
+<section class="hero-cinematic">
+  <div class="container hero-container">
+    <div class="hero-grid">
+      
+      <div class="badge-premium grid-badge">
+        <span class="status-dot"></span>
+        Exklusiver Fördermittel-Service
+      </div>
+      
+      <h1 class="reveal-on-scroll grid-title">Wir drehen Ihnen<br>den <span class="text-accent">Geldhahn auf</span></h1>
+      
+      <div class="hero-visual reveal-on-scroll reveal-delay-1 grid-visual">
+         <div class="visual-3d-wrapper">
+            <picture>
+  <source srcset="/images/hero_architecture_1774037628229.webp" type="image/webp" />
+  <img src="/images/hero_architecture_1774037628229.png" alt="Premium Corporate Architecture" width="800" height="1000" loading="eager" fetchpriority="high" class="hero-image" />
+</picture>
+         </div>
+         
+         <!-- Floating Social Proof Stats -->
+         <div class="floating-stat stat-tr glass-panel">
+            <div class="stat-value">&gt; 6.500</div>
+            <div class="stat-label">Erfolgreiche Anträge</div>
+         </div>
+         <div class="floating-stat stat-bl glass-panel">
+            <div class="stat-value">&gt; 92%</div>
+            <div class="stat-label">Erfolgsquote</div>
+         </div>
+      </div>
+      
+      <p class="subtitle reveal-on-scroll reveal-delay-1 grid-subtitle">
+        Nutzen Sie Lohnkostenzuschüsse als Reingewinn &ndash; verlässlich jeden Monat auf Ihrem Geschäftskonto. Wir realisieren Ihre zustehenden Fördermittel völlig risikofrei.
+      </p>
+      
+      <div class="hero-actions reveal-on-scroll reveal-delay-2 grid-actions">
+        <a href="#kontakt" class="btn btn-primary btn-hero">
+          Kostenfreie Potenzialanalyse
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="btn-icon-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <a href="#beispiele" class="btn btn-hero btn-hero-secondary">Förderbeispiele ansehen</a>
+      </div>
+      
+      <!-- Senior Trust Indicators -->
+      <div class="hero-trust-row reveal-on-scroll reveal-delay-3 grid-trust">
+        <div class="trust-item">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--c-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <span>Rein erfolgsabhängiges Honorar</span>
+        </div>
+        <div class="trust-item">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--c-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <span>0 &euro; Vorab-Kosten</span>
+        </div>
+        <div class="trust-item">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--c-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <span>Full-Service Abwicklung</span>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero-cinematic {
+    position: relative;
+    padding: calc(var(--spacing-xl) + 2rem) 0 var(--spacing-xl) 0;
+    background-color: var(--c-bg);
+    overflow: hidden;
+    color: var(--c-text);
+  }
+  @media (max-width: 1024px) {
+    .hero-cinematic {
+      padding: var(--spacing-xl) 0 var(--spacing-lg) 0;
+    }
+  }
+
+  .hero-container {
+    position: relative;
+    z-index: 10;
+  }
+
+  /* Balanced Grid layout */
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr; 
+    grid-template-rows: 1fr auto auto auto auto auto 1fr;
+    gap: 0 var(--spacing-lg);
+    align-items: start;
+    grid-template-areas: 
+      ".      visual"
+      "badge  visual"
+      "title  visual"
+      "sub    visual"
+      "action visual"
+      "trust  visual"
+      ".      visual";
+  }
+
+  .grid-badge { grid-area: badge; justify-self: start; }
+  .grid-title { grid-area: title; }
+  .grid-subtitle { grid-area: sub; }
+  .grid-actions { grid-area: action; }
+  .grid-trust { grid-area: trust; }
+  .grid-visual { 
+    grid-area: visual; 
+    align-self: center; /* Center the image vertically against the text stack */
+  }
+
+  @media (max-width: 1024px) {
+    .hero-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto auto auto; /* Reset desktop 1fr structural tracks */
+      grid-template-areas: 
+        "badge"
+        "title"
+        "visual"
+        "sub"
+        "action"
+        "trust";
+      text-align: center;
+      justify-items: center;
+    }
+    .grid-badge { justify-self: center; margin-bottom: 1.5rem !important; }
+    .grid-title { margin-bottom: 1rem !important; /* + 0.5rem visual margin-top = 1.5rem total */ }
+    .grid-visual {
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem; 
+      width: 100%;
+      max-width: 600px;
+    }
+    .grid-subtitle {
+      margin-bottom: 1.5rem !important; 
+    }
+    .grid-actions {
+      margin-bottom: 1.5rem !important; 
+    }
+  }
+  
+  /* Highly visible, opaque badge */
+  .badge-premium {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.5rem 1.2rem;
+    background: rgba(255, 107, 53, 0.1); /* Brand Synergy Glass */
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--c-accent); /* Orange text for immense contrast on dark blue */
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.1);
+  }
+  
+  .status-dot {
+    width: 8px; height: 8px;
+    background-color: var(--c-accent);
+    border-radius: 50%;
+  }
+
+  /* Proportionate, crisp typography */
+  .hero-cinematic h1 {
+    color: var(--c-primary-dark);
+    font-size: clamp(2.5rem, 4vw, 3.8rem); /* Scaled down for realism */
+    line-height: 1.1;
+    margin-bottom: 1.25rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    /* Removed text-shadow to make it brutally crisp */
+  }
+  
+  .text-accent {
+    color: var(--c-accent);
+  }
+
+  .subtitle {
+    font-size: clamp(1.05rem, 1.5vw, 1.2rem); 
+    color: var(--c-text-muted);
+    max-width: 540px; 
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  /* Actions (Proper Sizing) */
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: nowrap; /* STRICTLY ENFORCE SIDE-BY-SIDE ON DESKTOP */
+    width: auto;
+  }
+  
+  @media (max-width: 1024px) {
+    .hero-actions { 
+      justify-content: center; 
+      flex-wrap: wrap; /* Only allow wrap on tablet/mobile */
+    }
+  }
+  @media (max-width: 600px) {
+    .hero-actions { flex-direction: column; }
+    .hero-actions .btn-hero, .hero-actions .btn-hero-secondary { width: 100%; }
+  }
+  
+  .btn-hero {
+    padding: 0.8rem 1.4rem; /* Geometric optimization for 1100px screens */
+    font-size: 1.05rem;
+  }
+  
+  /* High Visibility Secondary Button for Light Background */
+  .btn-hero-secondary {
+    background: var(--c-surface);
+    border: 1px solid var(--c-border);
+    color: var(--c-primary-dark) !important;
+    font-weight: 600;
+  }
+  .btn-hero-secondary:hover {
+    background: var(--c-bg);
+    border-color: var(--c-primary);
+  }
+  
+  .btn-icon-right {
+    margin-left: 0.5rem;
+    transition: transform var(--transition-smooth);
+  }
+  .btn-primary:hover .btn-icon-right {
+    transform: translateX(4px);
+  }
+
+  /* Realistic Trust row (clean text & checkmarks) */
+  .hero-trust-row {
+    display: flex;
+    flex-wrap: wrap; /* Core fix: allow items to wrap gracefully instead of shrinking */
+    flex-direction: column; /* Stacked neatly */
+    gap: 0.75rem;
+  }
+  
+  @media (min-width: 600px) {
+    .hero-trust-row {
+      flex-direction: row; 
+      flex-wrap: wrap; /* Override for desktop */
+      gap: 1.5rem;
+      align-items: center;
+    }
+  }
+  
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--c-text);
+    font-weight: 500;
+    font-size: 0.95rem;
+    white-space: nowrap; /* Prevent discrete collapse / ugly internal text wrapping */
+  }
+
+  /* --- VISUAL COLUMN --- */
+  .hero-visual {
+    position: relative;
+    width: 100%;
+  }
+
+  /* PREMIUM FLOATING STATS */
+  .floating-stat {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem 1.5rem;
+    border-radius: var(--radius-lg);
+    z-index: 20;
+    pointer-events: none;
+    animation: float-badge 6s ease-in-out infinite;
+  }
+  .stat-value {
+    color: var(--c-primary-dark);
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 0.25rem;
+  }
+  .stat-label {
+    color: var(--c-text-muted);
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+  .stat-tr {
+    top: -2.5rem;
+    right: -2.5rem;
+    animation-delay: 0s;
+  }
+  .stat-bl {
+    bottom: -2.5rem;
+    left: -2.5rem;
+    animation-delay: -3s; /* Desync the float */
+  }
+
+  @keyframes float-badge {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+
+  @media (max-width: 1024px) {
+    .floating-stat {
+      padding: 1rem;
+      animation: none; /* Ensure stable layout on tablets */
+    }
+    .stat-tr { top: -1rem; right: -1rem; }
+    .stat-bl { bottom: -1rem; left: -1rem; }
+  }
+  @media (max-width: 768px) {
+    .floating-stat {
+      display: none; /* Hide entirely on mobile to prevent overlapping main content */
+    }
+  }
+
+  .visual-3d-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1; 
+    max-height: 550px;
+    border-radius: var(--radius-lg); 
+    overflow: hidden;
+    background: transparent;
+    box-shadow: 
+      0 0 0 1px var(--c-border);
+    transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+  }
+  
+  .visual-3d-wrapper:hover {
+    box-shadow: 
+      0 0 0 1px var(--c-border),
+      var(--shadow-lg);
+    transform: translateY(-4px);
+  }
+  
+  @media (max-width: 1024px) {
+    .visual-3d-wrapper {
+      transform: none !important;
+      aspect-ratio: 4/3; /* Wider on mobile to save height */
+      max-height: 400px;
+    }
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+</style>

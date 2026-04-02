@@ -1,0 +1,710 @@
+---
+import Layout from '../layouts/Layout.astro';
+const description = "Alle Seiten von Albatros Services im Überblick – Ihr spezialisierter Partner für Lohnkostenzuschüsse und Eingliederungszuschüsse in Deutschland. 92% Erfolgsquote, 100% erfolgsbasiert.";
+---
+
+<Layout title="Übersicht & Fördermittel-Wissen | Albatros Services" description={description}>
+
+  <!-- Schema: SiteNavigation -->
+  <script type="application/ld+json" is:inline>{JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "SiteNavigationElement",
+    "name": "Albatros Services – Fördermittel-Wissen",
+    "url": "https://albatrosservices.de/foerdermittel-wissen"
+  })}</script>
+
+  <!-- Schema: FAQ -->
+  <script type="application/ld+json" is:inline>{JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Ab wann verfällt ein Anspruch auf Eingliederungszuschuss?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Der Antrag auf Eingliederungszuschuss (EGZ) muss vor Beginn des Beschäftigungsverhältnisses oder innerhalb weniger Wochen nach der Einstellung gestellt werden. Unternehmen, die erst Monate nach der Einstellung einen Berater beauftragen, haben häufig bereits Ansprüche verloren."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Können Eingliederungszuschuss und Qualifizierungsförderung gleichzeitig beantragt werden?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Unter bestimmten Voraussetzungen lassen sich EGZ und Qualifizierungsförderung nach §§ 81–87 SGB III parallel beantragen, was die Fördersumme je Mitarbeiter und Jahr signifikant erhöht."
+        }
+      }
+    ]
+  })}</script>
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json" is:inline>{JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://albatrosservices.de/"},
+      {"@type": "ListItem", "position": 2, "name": "Fördermittel-Wissen", "item": "https://albatrosservices.de/foerdermittel-wissen"}
+    ]
+  })}</script>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="sm-hero" id="top" aria-label="Seitenübersicht Albatros Services">
+    <div class="container sm-hero__inner">
+      <div class="sm-hero__text">
+        <span class="sm-hero__eyebrow">albatrosservices.de</span>
+        <h1 class="sm-hero__h1">Übersicht & Wissen</h1>
+        <p class="sm-hero__desc">Alle Seiten, Ressourcen und tiefgreifendes Expertenwissen – strukturiert für Sie gebündelt.</p>
+        <!-- Mini-TOC -->
+        <nav class="sm-toc" aria-label="Seitennavigation">
+          <a href="#hauptseiten" class="sm-toc__link">Hauptseiten</a>
+          <a href="#rechtliches" class="sm-toc__link">Rechtliches</a>
+          <a href="#technisches" class="sm-toc__link">Technisches</a>
+          <a href="#einblicke" class="sm-toc__link">Einblicke</a>
+        </nav>
+      </div>
+      <div class="sm-hero__stats" aria-label="Zusammenfassung">
+        <div class="sm-stat"><span class="sm-stat__lbl">Erfolgsquote</span><span class="sm-stat__val">92&nbsp;%</span></div>
+        <div class="sm-stat"><span class="sm-stat__lbl">Erstprüfung</span><span class="sm-stat__val">&lt;&nbsp;48&nbsp;h</span></div>
+        <div class="sm-stat"><span class="sm-stat__lbl">Vorabkosten</span><span class="sm-stat__val">0&nbsp;€</span></div>
+        <div class="sm-stat"><span class="sm-stat__lbl">Honorarmodell</span><span class="sm-stat__val">100&nbsp;% erfolgsbasiert</span></div>
+        <div class="sm-stat"><span class="sm-stat__lbl">Förderwege</span><span class="sm-stat__val">EGZ &amp; Qualifizierung</span></div>
+        <div class="sm-stat"><span class="sm-stat__lbl">Rechtsgrundlage</span><span class="sm-stat__val">§§ 16, 81–87 SGB III</span></div>
+        <div class="sm-stat"><span class="sm-stat__lbl">Standort</span><span class="sm-stat__val">Berlin-Adlershof</span></div>
+        <div class="sm-stat"><span class="sm-stat__lbl">Gesellschaft</span><span class="sm-stat__val">upgrade4you GmbH</span></div>
+        <div class="sm-stat"><span class="sm-stat__lbl">Tätigkeitsgebiet</span><span class="sm-stat__val">Deutschlandweit</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ LINKS GRID (Navigation First) ═══ -->
+  <div class="container sm-grid">
+
+    <!-- Hauptseiten -->
+    <section id="hauptseiten" aria-labelledby="lbl-hauptseiten">
+      <header class="sm-section-hd">
+        <span class="sm-badge sm-badge--accent" aria-hidden="true">1</span>
+        <h2 id="lbl-hauptseiten" class="sm-section-hd__title">Hauptseiten</h2>
+      </header>
+      <p class="sm-section-desc">Die Kernbereiche der Website – von der Leistungsübersicht bis zur unverbindlichen Potenzialanalyse.</p>
+      <ul class="sm-list" role="list">
+        <li class="sm-list__item">
+          <a href="/" class="sm-link">
+            <div class="sm-link__body">
+              <strong class="sm-link__title">Startseite</strong>
+              <span class="sm-link__desc">Gesamtübersicht aller Leistungen, Praxisbeispiele und Alleinstellungsmerkmale von Albatros Services.</span>
+            </div>
+            <svg class="sm-link__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </li>
+        <li class="sm-list__item">
+          <a href="/#beispiele" class="sm-link">
+            <div class="sm-link__body">
+              <strong class="sm-link__title">Fördermittel-Beispiele</strong>
+              <span class="sm-link__desc">Reale Praxisfälle: Welche Branchen profitieren? Wie hoch sind die Erstattungen? Typische Einstellungskonstellationen.</span>
+            </div>
+            <svg class="sm-link__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </li>
+        <li class="sm-list__item">
+          <a href="/#vorteile" class="sm-link">
+            <div class="sm-link__body">
+              <strong class="sm-link__title">Warum Albatros Services</strong>
+              <span class="sm-link__desc">8 konkrete Alleinstellungsmerkmale – 92%-Erfolgsquote, Null-Aufwand-Versprechen und vollständige Übernahme des Antragsprozesses.</span>
+            </div>
+            <svg class="sm-link__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </li>
+        <li class="sm-list__item">
+          <a href="/#ablauf" class="sm-link">
+            <div class="sm-link__body">
+              <strong class="sm-link__title">Unser Ablauf</strong>
+              <span class="sm-link__desc">Von der kostenfreien Erstprüfung über die Antragsstellung bis zur monatlichen Auszahlung – transparenter Vier-Schritte-Prozess.</span>
+            </div>
+            <svg class="sm-link__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </li>
+        <li class="sm-list__item">
+          <a href="/#foerderarten" class="sm-link">
+            <div class="sm-link__body">
+              <strong class="sm-link__title">Förderarten</strong>
+              <span class="sm-link__desc">EGZ, Qualifizierungsförderung nach §§&nbsp;81–87 SGB&nbsp;III und weitere Beschäftigungshilfen im Überblick.</span>
+            </div>
+            <svg class="sm-link__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </li>
+        <li class="sm-list__item">
+          <a href="/#faq" class="sm-link">
+            <div class="sm-link__body">
+              <strong class="sm-link__title">Häufige Fragen (FAQ)</strong>
+              <span class="sm-link__desc">Wer ist förderfähig? Wie lange dauert die Bearbeitung? Was passiert, wenn kein Zuschuss gewährt wird?</span>
+            </div>
+            <svg class="sm-link__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </li>
+        <li class="sm-list__item sm-list__item--cta">
+          <a href="/#kontakt" class="sm-link">
+            <div class="sm-link__body">
+              <strong class="sm-link__title sm-link__title--accent">Kostenfreie Potenzialanalyse</strong>
+              <span class="sm-link__desc">Unverbindlich prüfen lassen – kein Honorar vorab, keine versteckten Kosten, nur Ergebnisse.</span>
+            </div>
+            <svg class="sm-link__arrow sm-link__arrow--accent" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Aside -->
+    <aside class="sm-aside" aria-label="Rechtliche und technische Ressourcen">
+
+      <!-- Rechtliches -->
+      <section id="rechtliches" aria-labelledby="lbl-rechtliches">
+        <header class="sm-section-hd">
+          <span class="sm-badge sm-badge--blue" aria-hidden="true">2</span>
+          <h2 id="lbl-rechtliches" class="sm-section-hd__title">Rechtliches</h2>
+        </header>
+        <p class="sm-section-desc">Transparenz und Compliance – alle gesetzlich relevanten Dokumente.</p>
+        <ul class="sm-list" role="list">
+          <li class="sm-list__item">
+            <a href="/impressum" class="sm-link sm-link--compact">
+              <div class="sm-link__body">
+                <strong class="sm-link__title">Impressum</strong>
+                <span class="sm-link__desc">Pflichtangaben nach § 5 DDG: Vertreter, Handelsregister, Kontakt.</span>
+              </div>
+              <svg class="sm-link__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </li>
+          <li class="sm-list__item">
+            <a href="/datenschutz" class="sm-link sm-link--compact">
+              <div class="sm-link__body">
+                <strong class="sm-link__title">Datenschutzerklärung</strong>
+                <span class="sm-link__desc">DSGVO-konforme Informationen zur Datenverarbeitung und Betroffenenrechten.</span>
+              </div>
+              <svg class="sm-link__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </li>
+          <li class="sm-list__item">
+            <a href="/barrierefreiheit" class="sm-link sm-link--compact">
+              <div class="sm-link__body">
+                <strong class="sm-link__title">Barrierefreiheitserklärung</strong>
+                <span class="sm-link__desc">Umsetzungsstand gemäß WCAG 2.1 Stufe AA und Feedbackkanal.</span>
+              </div>
+              <svg class="sm-link__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Technisches -->
+      <section id="technisches" aria-labelledby="lbl-technisches">
+        <header class="sm-section-hd">
+          <span class="sm-badge sm-badge--blue" aria-hidden="true">3</span>
+          <h2 id="lbl-technisches" class="sm-section-hd__title">Technisches</h2>
+        </header>
+        <p class="sm-section-desc">Maschinenlesbare Ressourcen für Suchmaschinen, KI-Systeme und Entwickler.</p>
+        <ul class="sm-list" role="list">
+          <li class="sm-list__item">
+            <a href="/sitemap-index.xml" target="_blank" rel="noopener noreferrer" class="sm-link sm-link--compact">
+              <div class="sm-link__body">
+                <strong class="sm-link__title">XML-Sitemap</strong>
+                <span class="sm-link__desc">Automatisch generiert für Google &amp; Bing.</span>
+              </div>
+              <svg class="sm-link__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </li>
+          <li class="sm-list__item">
+            <a href="/robots.txt" target="_blank" rel="noopener noreferrer" class="sm-link sm-link--compact">
+              <div class="sm-link__body">
+                <strong class="sm-link__title">robots.txt</strong>
+                <span class="sm-link__desc">Crawling-Direktiven für Suchmaschinen-Bots.</span>
+              </div>
+              <svg class="sm-link__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </li>
+          <li class="sm-list__item">
+            <a href="/humans.txt" target="_blank" rel="noopener noreferrer" class="sm-link sm-link--compact">
+              <div class="sm-link__body">
+                <strong class="sm-link__title">humans.txt</strong>
+                <span class="sm-link__desc">Team, Technologie und Kontakt.</span>
+              </div>
+              <svg class="sm-link__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </li>
+          <li class="sm-list__item">
+            <a href="/llms.txt" target="_blank" rel="noopener noreferrer" class="sm-link sm-link--compact">
+              <div class="sm-link__body">
+                <strong class="sm-link__title">llms.txt</strong>
+                <span class="sm-link__desc">KI-Kontext nach dem llmstxt.org-Standard.</span>
+              </div>
+              <svg class="sm-link__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+    </aside>
+  </div>
+
+  <!-- ═══ ÜBER ALBATROS ═══ -->
+  <div class="sm-about container">
+    <h2 class="sm-about__h2">Über Albatros Services</h2>
+    <p class="sm-about__p">Staatliche Lohnkostenzuschüsse nach dem SGB III werden von der Bundesagentur für Arbeit finanziert – fließen in der Praxis jedoch nur an einen Bruchteil der anspruchsberechtigten Unternehmen. Der häufigste Grund: Anträge müssen für bestimmte Fördertypen vor Beschäftigungsbeginn eingereicht werden, die Fristlogik unterscheidet sich je Instrument, und die Möglichkeit zur parallelen Beantragung mehrerer Förderungen ist kaum bekannt.</p>
+    <p class="sm-about__p">Albatros Services ist auf genau dieses Feld spezialisiert: den <mark data-geo="fact">Eingliederungszuschuss (EGZ)</mark> gemäß § 16 SGB III und die <mark data-geo="fact">Qualifizierungsförderung</mark> nach §§ 81–87 SGB III. Beide Instrumente erstatten Arbeitgebern Lohnkosten – bei Neueinstellungen oder Qualifizierungsmaßnahmen. Unter bestimmten Voraussetzungen lassen sich beide Förderungen parallel beantragen, was die Gesamtfördersumme je Mitarbeiter erheblich steigert.</p>
+    <p class="sm-about__p">Anspruchsberechtigt sind grundsätzlich Unternehmen aller Branchen und Größen, sofern die Einstellung oder Qualifizierung die gesetzlichen Kriterien erfüllt. Eine Mindestbetriebsgröße oder spezifische Branchenzugehörigkeit ist nicht vorausgesetzt. Entscheidend sind Zeitpunkt der Antragstellung, Art des Beschäftigungsverhältnisses und die Förderfähigkeit der eingestellten Person.</p>
+    <p class="sm-about__p">Die kostenfreie Erstprüfung erfolgt innerhalb von 48 Stunden; die vollständige Antragsbearbeitung – inklusive Behördenkommunikation, Fristenverwaltung und Nachverfolgung – übernimmt das Beratungsteam deutschlandweit. Honorar wird ausschließlich erfolgsbasiert fällig: nur wenn Fördergelder tatsächlich fließen.</p>
+  </div>
+
+  <!-- ═══ INSIGHTS ═══ -->
+  <div id="einblicke" class="sm-insights container">
+    <h2 class="sm-insights__hd">Einblicke &amp; Expertenwissen</h2>
+
+    <!-- Myth-Busting -->
+    <div class="sm-myth">
+      <h3 class="sm-label">Häufiger Irrtum</h3>
+      <div class="sm-myth__row">
+        <div class="sm-myth__col sm-myth__col--false">
+          <span class="sm-myth__tag sm-myth__tag--false">✗ Mythos</span>
+          <p class="sm-myth__text">„Staatliche Lohnkostenzuschüsse sind nur für Großkonzerne oder Sozialunternehmen relevant."</p>
+        </div>
+        <div class="sm-myth__col sm-myth__col--true">
+          <span class="sm-myth__tag sm-myth__tag--true">✓ Realität</span>
+          <p class="sm-myth__text">Die Bundesagentur für Arbeit fördert ausdrücklich KMU. Handwerksbetriebe, Dienstleister und Einzelhändler zählen zu den häufigsten Empfängern – sofern die Einstellung die Kriterien des § 16 SGB III erfüllt.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Detail Cards -->
+    <div class="sm-cards">
+      <div class="sm-card">
+        <span class="sm-card__eye">Das unbekannte Detail</span>
+        <h3 class="sm-card__title">EGZ und Qualifizierungsförderung lassen sich kombinieren</h3>
+        <p class="sm-card__text">Was selbst erfahrene Personalverantwortliche selten wissen: EGZ und Qualifizierungsförderung nach §§&nbsp;81–87 SGB&nbsp;III schließen sich nicht gegenseitig aus. Beide Instrumente können unter bestimmten Voraussetzungen parallel beantragt werden – das erhöht die Fördersumme je Mitarbeiter erheblich. Albatros Services prüft beide Förderpfade automatisch.</p>
+      </div>
+      <div class="sm-card">
+        <span class="sm-card__eye">Die Frage, die Sie noch nicht gestellt haben</span>
+        <h3 class="sm-card__title">Ab wann verfällt ein Förderanspruch?</h3>
+        <p class="sm-card__text">Der Antrag muss <mark data-geo="fact">vor Beginn des Beschäftigungsverhältnisses</mark> oder innerhalb weniger Wochen danach gestellt werden. Fristen variieren je Fördertyp. Wer erst Monate nach der Einstellung einen Berater beauftragt, hat häufig bereits Ansprüche verloren. Eine kostenfreie Erstprüfung so früh wie möglich ist deshalb entscheidend.</p>
+      </div>
+    </div>
+
+    <!-- SEO Infographic (Slide Extract Aesthetic) -->
+    <figure class="sm-infographic" aria-label="Statistik zu Lohnkostenzuschüssen 2024">
+      <img src="/images/lohnkostenzuschuesse-foerderung-statistik-2024.webp" 
+           alt="Infografik 2024: Ausgaben und Anzahl der Fördermaßnahmen für Eingliederungszuschüsse (EGZ) und Lohnkostenzuschüsse über SGB II und SGB III durch die Bundesagentur für Arbeit." 
+           width="1335" height="632" loading="lazy" class="sm-infographic__img" />
+      <figcaption class="sm-infographic__cap">
+         <strong>Aktuelle Förder-Statistik 2024:</strong> Ausgaben (in Mio. EUR) und die Gesamtzahl der geförderten Einstellungen über Eingliederungszuschüsse (EGZ) der Bundesagentur für Arbeit. <br/><em>Mangelndes Wissen über diese Budgets führt oft zu verschenktem Unternehmenskapital.</em>
+      </figcaption>
+    </figure>
+
+    <!-- Expert Quotes -->
+    <div class="sm-quotes">
+      <blockquote class="sm-quote">
+        <p class="sm-quote__text">Wir sehen täglich, dass Unternehmen Fördermittel ungenutzt verfallen lassen – nicht aus Gleichgültigkeit, sondern weil niemand sie rechtzeitig darauf hingewiesen hat.“</p>
+        <footer class="sm-quote__footer">
+          <cite class="sm-quote__author">Beratungsteam Albatros Services</cite>
+          <span class="sm-quote__role">Fördermittelspezialisten, Berlin</span>
+        </footer>
+      </blockquote>
+      <blockquote class="sm-quote">
+        <p class="sm-quote__text">Der EGZ ist kein bürokratischer Sonderweg – er ist ein reguläres Arbeitsmarktinstrument, das jedem einstellenden Betrieb offensteht. Die Frage ist nur, ob der Antrag korrekt und rechtzeitig gestellt wird.“</p>
+        <footer class="sm-quote__footer">
+          <cite class="sm-quote__author">Fachreferat Arbeitsmarktförderung</cite>
+          <span class="sm-quote__role">upgrade4you GmbH · Albatros Services</span>
+        </footer>
+      </blockquote>
+    </div>
+
+    <!-- 2026 Context -->
+    <div class="sm-context">
+      <h3 class="sm-context__h2">Albatros Services 2026 – Was sich verändert hat</h3>
+      <p class="sm-context__p">Der Arbeitsmarkt 2026 steht vor strukturellen Verschiebungen: steigende Lohnkosten, Fachkräftemangel und zunehmende Regulierung machen staatliche Förderinstrumente für Unternehmen wichtiger denn je. Viele Betriebe lassen Ansprüche verfallen, die ihnen rechtlich bereits zustehen. Albatros Services hat seine Prozesse 2026 weiter digitalisiert und liefert Erstprüfungen in unter 48 Stunden.</p>
+    </div>
+
+  </div>
+
+  <!-- ═══ CTA ═══ -->
+  <section class="sm-cta" aria-label="Kontaktaufforderung">
+    <div class="container sm-cta__inner">
+      <div>
+        <h2 class="sm-cta__title">Nicht gefunden was Sie suchen?</h2>
+        <p class="sm-cta__sub">Sprechen Sie uns direkt an – Erstprüfung innerhalb von 48 Stunden.</p>
+      </div>
+      <a href="/#kontakt" class="btn btn-primary">Kostenfreie Potenzialanalyse anfragen</a>
+    </div>
+  </section>
+
+
+
+</Layout>
+
+<style>
+  /* ── Utilities ── */
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0;
+    margin: -1px; overflow: hidden; clip: rect(0,0,0,0);
+    white-space: nowrap; border-width: 0;
+  }
+
+  /* ══════════════════════════════
+     HERO
+  ══════════════════════════════ */
+  .sm-hero {
+    background: var(--c-primary-dark);
+    padding: 5rem 0 3.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .sm-hero__inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .sm-hero__eyebrow {
+    display: inline-block;
+    font-size: 0.75rem; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--c-accent); margin-bottom: 0.75rem;
+  }
+  .sm-hero__h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem) !important;
+    font-weight: 900 !important; color: #fff !important;
+    line-height: 1 !important; margin: 0 0 0.6rem !important;
+    letter-spacing: -0.03em !important;
+  }
+  .sm-hero__desc {
+    color: rgba(255,255,255,0.85) !important;
+    font-size: 1rem !important; margin: 0 0 1.25rem !important;
+    max-width: 480px;
+  }
+
+  /* Mini TOC */
+  .sm-toc {
+    display: flex; gap: 0.5rem; flex-wrap: wrap;
+  }
+  .sm-toc__link {
+    display: inline-flex; align-items: center;
+    font-size: 0.78rem; font-weight: 600;
+    color: rgba(255,255,255,0.8);
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 2rem; padding: 0.3rem 0.85rem;
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+  }
+  .sm-toc__link:hover {
+    background: rgba(255,255,255,0.16);
+    color: #fff; border-color: rgba(255,255,255,0.25);
+  }
+
+  /* Stats – soft 3×3 summary */
+  .sm-hero__stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    flex-shrink: 0;
+    min-width: 320px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .sm-stat {
+    display: flex; flex-direction: column; gap: 0.15rem;
+    padding: 0.75rem 1rem;
+    border-right: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .sm-stat:nth-child(3n) { border-right: none; }
+  .sm-stat:nth-last-child(-n+3) { border-bottom: none; }
+  .sm-stat__lbl {
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: rgba(255,255,255,0.7);
+    text-transform: uppercase;
+  }
+  .sm-stat__val {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.88);
+    line-height: 1.2;
+  }
+
+  /* ══════════════════════════════
+     MAIN GRID
+  ══════════════════════════════ */
+  .sm-grid {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    align-items: start;
+    border-bottom: 1px solid var(--c-border);
+  }
+  .sm-aside {
+    display: flex; flex-direction: column; gap: 2.5rem;
+  }
+
+  /* Section headers */
+  .sm-section-hd {
+    display: flex; align-items: center; gap: 0.6rem;
+    font-size: 0.72rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--c-text-muted); margin-bottom: 0.4rem;
+  }
+  .sm-section-hd__title {
+    font-size: 0.72rem !important; font-weight: 700 !important;
+    text-transform: uppercase !important; letter-spacing: 0.1em !important;
+    color: var(--c-text-muted) !important; line-height: 1 !important;
+    margin: 0 !important;
+  }
+  .sm-badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 20px; height: 20px; border-radius: 50%;
+    font-size: 0.65rem; font-weight: 700; color: #fff; flex-shrink: 0;
+    line-height: 1; padding-top: 1px; transform: translateY(0.5px);
+  }
+  .sm-badge--accent { background: var(--c-accent); }
+  .sm-badge--blue   { background: var(--c-primary); }
+  .sm-section-desc {
+    font-size: 0.88rem !important; color: var(--c-text-muted) !important;
+    margin: 0 0 1rem !important; line-height: 1.5 !important;
+  }
+
+  /* ── Link List ── */
+  .sm-list {
+    list-style: none !important; padding: 0 !important; margin: 0 !important;
+    border-top: 1px solid var(--c-border);
+  }
+  .sm-list__item {
+    list-style: none !important; border-bottom: 1px solid var(--c-border);
+  }
+  .sm-list__item--cta { background: rgba(255,107,53,0.03); }
+  .sm-link {
+    display: flex !important; align-items: center !important;
+    justify-content: space-between !important; gap: 1rem !important;
+    text-decoration: none !important; color: inherit !important;
+    padding: 1rem 0.25rem 1rem 0 !important;
+    transition: padding-left 0.18s, background 0.15s;
+    border-radius: 4px;
+  }
+  .sm-link--compact { padding: 0.75rem 0.25rem 0.75rem 0 !important; }
+  .sm-link:hover { background: var(--c-bg); padding-left: 0.5rem !important; }
+  .sm-link:hover .sm-link__arrow { color: var(--c-accent); transform: translateX(3px); }
+  .sm-link__body { display: flex; flex-direction: column; gap: 0.1rem; }
+  .sm-link__title {
+    display: block; font-size: 0.975rem !important;
+    font-weight: 600 !important; color: var(--c-primary-dark) !important;
+    line-height: 1.3 !important;
+  }
+  .sm-link--compact .sm-link__title { font-size: 0.88rem !important; }
+  .sm-link__title--accent { color: var(--c-accent) !important; }
+  .sm-link__desc {
+    font-size: 0.84rem; color: var(--c-text-muted);
+    line-height: 1.45; display: block;
+  }
+  .sm-link--compact .sm-link__desc { font-size: 0.78rem; }
+  .sm-link__arrow {
+    flex-shrink: 0; color: #D1D5DB;
+    transition: transform 0.2s, color 0.2s;
+  }
+  .sm-link__arrow--accent { color: var(--c-accent); }
+
+  /* ══════════════════════════════
+     ABOUT
+  ══════════════════════════════ */
+  .sm-about {
+    display: block;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--c-border);
+  }
+  .sm-about__h2 {
+    font-size: 1.05rem !important; font-weight: 700 !important;
+    color: var(--c-primary-dark) !important; margin-bottom: 0.5rem !important;
+  }
+  .sm-about__p {
+    font-size: 0.93rem !important; color: var(--c-text) !important;
+    line-height: 1.7 !important; margin: 0 0 1rem 0 !important;
+  }
+  .sm-about__p:last-child { margin-bottom: 0 !important; }
+
+
+  /* ══════════════════════════════
+     INSIGHTS
+  ══════════════════════════════ */
+  .sm-insights {
+    padding-top: 3rem; padding-bottom: 3rem;
+    display: flex; flex-direction: column; gap: 2.5rem;
+    border-bottom: 1px solid var(--c-border);
+  }
+  .sm-insights__hd {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--c-primary-dark);
+    letter-spacing: 0;
+    text-transform: none;
+    margin: 0 0 0.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--c-border);
+  }
+
+  /* Myth */
+  .sm-label {
+    font-size: 0.72rem !important; font-weight: 700 !important;
+    text-transform: uppercase !important; letter-spacing: 0.1em !important;
+    color: var(--c-text-muted) !important; margin-bottom: 0.6rem !important;
+    margin-top: 0 !important;
+  }
+  .sm-myth__row {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;
+  }
+  .sm-myth__col {
+    border-radius: var(--radius-md); padding: 1.1rem 1.25rem;
+  }
+  .sm-myth__col--false { background: #FEF2F2; border: 1px solid #FECACA; }
+  .sm-myth__col--true  { background: #F0FDF4; border: 1px solid #BBF7D0; }
+  .sm-myth__tag {
+    display: inline-block; font-size: 0.68rem; font-weight: 700;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    border-radius: 2rem; padding: 0.18rem 0.55rem; margin-bottom: 0.5rem;
+  }
+  .sm-myth__tag--false { background: #FEE2E2; color: #B91C1C; }
+  .sm-myth__tag--true  { background: #DCFCE7; color: #15803D; }
+  .sm-myth__text {
+    font-size: 0.88rem !important; line-height: 1.6 !important;
+    color: var(--c-text) !important; margin: 0 !important;
+  }
+
+  /* Cards */
+  .sm-cards {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;
+  }
+  .sm-card {
+    background: var(--c-surface); border: 1px solid var(--c-border);
+    border-left: 3px solid var(--c-accent);
+    border-radius: var(--radius-md); padding: 1.35rem;
+  }
+  .sm-card__eye {
+    display: block; font-size: 0.68rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--c-accent); margin-bottom: 0.4rem;
+  }
+  .sm-card__title {
+    font-size: 0.975rem !important; font-weight: 700 !important;
+    color: var(--c-primary-dark) !important; margin-bottom: 0.6rem !important;
+    line-height: 1.3 !important;
+  }
+  .sm-card__text {
+    font-size: 0.875rem !important; color: var(--c-text) !important;
+    line-height: 1.65 !important; margin: 0 !important;
+  }
+  .sm-card__text strong { color: var(--c-primary-dark) !important; }
+
+  /* Quotes */
+  .sm-quotes {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;
+  }
+  .sm-quote {
+    margin: 0; padding: 1.35rem;
+    background: var(--c-primary-dark);
+    border-radius: var(--radius-md);
+  }
+  .sm-quote::before {
+    content: '\201E'; font-size: 3.5rem; color: var(--c-accent);
+    line-height: 1; display: block; margin-bottom: -0.4rem;
+    font-family: Georgia, serif; opacity: 0.55;
+  }
+  .sm-quote__text {
+    font-size: 0.9rem !important; color: rgba(255,255,255,0.85) !important;
+    line-height: 1.65 !important; margin: 0 0 0.9rem !important;
+    font-style: italic;
+  }
+  .sm-quote__footer {
+    display: flex; flex-direction: column; gap: 0.1rem;
+    border-top: 1px solid rgba(255,255,255,0.1); padding-top: 0.65rem;
+  }
+  .sm-quote__author {
+    font-size: 0.83rem; font-weight: 600; color: #fff; display: block;
+  }
+  .sm-quote__role {
+    font-size: 0.75rem; color: rgba(255,255,255,0.5); display: block;
+  }
+
+  /* SEO Infographic */
+  .sm-infographic {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background: var(--c-surface);
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    display: flex; flex-direction: column; gap: 1.25rem;
+  }
+  .sm-infographic__img {
+    width: 100%; height: auto;
+    border-radius: var(--radius-sm);
+    display: block;
+  }
+  .sm-infographic__cap {
+    font-size: 0.85rem !important; color: var(--c-text-muted) !important;
+    line-height: 1.6 !important; text-align: center !important;
+    display: block; width: 100%; border-top: none;
+    padding: 0 1rem; margin: 0;
+  }
+  .sm-infographic__cap strong { color: var(--c-primary-dark) !important; }
+
+  /* 2026 Context */
+  .sm-context {
+    background: var(--c-surface);
+    border: 1px solid var(--c-border);
+    border-left: 3px solid var(--c-primary);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+  }
+  .sm-context__h2 {
+    font-size: 1rem !important; font-weight: 700 !important;
+    color: var(--c-primary-dark) !important; margin-bottom: 0.6rem !important;
+  }
+  .sm-context__p {
+    font-size: 0.9rem !important; color: var(--c-text) !important;
+    line-height: 1.65 !important; margin: 0 !important;
+  }
+
+  /* ══════════════════════════════
+     CTA
+  ══════════════════════════════ */
+  .sm-cta {
+    background: var(--c-primary); padding: 4rem 0;
+  }
+  .sm-cta__inner {
+    display: flex; align-items: center;
+    justify-content: space-between; gap: 2rem; flex-wrap: wrap;
+  }
+  .sm-cta__title {
+    font-size: 1.2rem !important; font-weight: 700 !important;
+    color: #fff !important; margin: 0 0 0.25rem !important;
+  }
+  .sm-cta__sub {
+    font-size: 0.92rem !important; color: rgba(255,255,255,0.6) !important;
+    margin: 0 !important;
+  }
+
+  /* ══════════════════════════════
+     RESPONSIVE
+  ══════════════════════════════ */
+  @media (max-width: 960px) {
+    .sm-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .sm-hero__inner { flex-direction: column; align-items: flex-start; }
+    .sm-hero__stats { grid-template-columns: repeat(2, 1fr); }
+    .sm-myth__row, .sm-cards, .sm-quotes { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .sm-cta__inner { flex-direction: column; align-items: flex-start; }
+    .sm-cta__inner .btn { width: 100%; text-align: center; }
+    .sm-hero__stats { gap: 1.5rem; }
+    .sm-toc { gap: 0.4rem; }
+  }
+</style>

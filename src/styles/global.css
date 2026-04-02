@@ -1,0 +1,389 @@
+:root {
+  /* Elite Color Palette 2026 */
+  --c-primary: #004B87;
+  --c-primary-light: #0066B3;
+  --c-primary-dark: #002B52;
+  --c-accent: #FF6B35;
+  --c-accent-hover: #E85D2A;
+  --c-bg: #F8F9FA;
+  --c-surface: #FFFFFF;
+  --c-text: #1F2937;
+  --c-text-muted: #6B7280;
+  --c-border: #E5E7EB;
+
+  /* Modern Typography */
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Elite 10/10 Fluid Spacing System */
+  --spacing-xs: clamp(0.5rem, 1vw, 0.75rem);
+  --spacing-sm: clamp(0.75rem, 2vw, 1.25rem);
+  --spacing-md: clamp(1.25rem, 3vw, 2rem);
+  --spacing-lg: clamp(2rem, 4vw, 3rem);
+  --spacing-xl: clamp(3.5rem, 6vw, 5rem);
+  --spacing-2xl: clamp(5rem, 8vw, 8rem);
+  /* 80px to 128px */
+
+  /* Organic GPU-Accelerated Easing */
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Premium Depth / Exponential Shadows */
+  --shadow-sm:
+    0 1px 2px rgba(0, 43, 82, 0.04),
+    0 2px 4px rgba(0, 43, 82, 0.04),
+    0 4px 8px rgba(0, 43, 82, 0.04);
+
+  --shadow-md:
+    0 2px 4px rgba(0, 43, 82, 0.04),
+    0 4px 8px rgba(0, 43, 82, 0.04),
+    0 8px 16px rgba(0, 43, 82, 0.04),
+    0 16px 32px rgba(0, 43, 82, 0.04);
+
+  --shadow-lg:
+    0 2px 4px rgba(0, 43, 82, 0.04),
+    0 8px 16px rgba(0, 43, 82, 0.04),
+    0 16px 32px rgba(0, 43, 82, 0.04),
+    0 32px 64px rgba(0, 43, 82, 0.06);
+
+  --shadow-glow: 0 0 40px rgba(255, 107, 53, 0.3);
+
+  /* Border Radius - Premium B2B */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-body);
+  color: var(--c-text);
+  background-color: var(--c-bg);
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#main-content {
+  overflow-x: hidden;
+}
+
+/* Accessibility Focus States */
+*:focus-visible {
+  outline: 3px solid var(--c-accent) !important;
+  outline-offset: 3px !important;
+}
+
+/* Typography Scales */
+h1,
+h2,
+h3,
+h4 {
+  color: var(--c-primary-dark);
+  line-height: 1.2;
+}
+
+strong {
+  color: var(--c-primary-dark);
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  /* Cinematic tight tracking */
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: clamp(1.35rem, 2.5vw, 1.65rem);
+  /* AAA Sub-heading Authority */
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+h4 {
+  font-size: clamp(1.15rem, 2vw, 1.35rem);
+  font-weight: 700;
+}
+
+h2.section-title {
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0;
+  /* Overhauled: spacing is now governed by flex gap */
+  text-align: center;
+}
+
+h2.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--c-accent);
+  margin: 1.5rem auto 0;
+  border-radius: var(--radius-full);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto var(--spacing-md) auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  /* The ultimate AAA structural lock */
+  position: relative;
+  z-index: 3;
+}
+
+.section-subtitle {
+  font-size: clamp(1.1rem, 2vw, 1.25rem);
+  color: var(--c-text-muted);
+  text-align: center;
+  margin-top: 0;
+  /* Purged the hacky overlap logic */
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+p {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+  color: var(--c-text);
+}
+
+/* Layout Utilities */
+.container {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.container.container-narrow {
+  max-width: 1100px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+    /* Ensure generous screen breathing room */
+  }
+}
+
+.d-none {
+  display: none !important;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.section {
+  padding: var(--spacing-2xl) 0;
+  /* Massively expanded to push away from previous section */
+}
+
+/* Premium Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 1.125rem;
+  text-decoration: none;
+  transition: all var(--transition-smooth);
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--c-accent);
+  color: #ffffff !important;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.2);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: var(--c-accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--c-primary);
+  border: 2px solid var(--c-border);
+}
+
+.btn-outline:hover {
+  border-color: var(--c-primary);
+  background-color: var(--c-primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Premium Corporate Cards */
+.glass-panel {
+  background: #ffffff;
+  border: 1px solid var(--c-border);
+  box-shadow: var(--shadow-sm);
+  border-radius: var(--radius-md);
+}
+
+/* Smooth Image/Media Resets */
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Identity-Preserving Print Standards 2026 */
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    transition: none !important;
+    animation: none !important;
+  }
+
+  body {
+    font-size: 11pt;
+    line-height: 1.5;
+    background-color: white !important;
+  }
+
+  .hero-cinematic {
+    padding: 2rem 0 !important;
+    border-bottom: 2px solid #000;
+  }
+
+  .hero-bg-glow {
+    display: none !important;
+  }
+
+  .btn,
+  .mobile-menu-btn,
+  footer,
+  .contact-form-wrapper {
+    display: none !important;
+  }
+
+  .glass-panel {
+    border: 1px solid #ccc !important;
+    background: white !important;
+  }
+
+  @page {
+    margin: 2cm;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  img,
+  svg,
+  .card,
+  .step-card,
+  .benefit-item {
+    page-break-inside: avoid;
+  }
+}
+
+/* --- Cinematic Scroll Physics (Premium B2B) --- */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hardware-accelerated cascading stagger delays */
+.reveal-delay-1 {
+  transition-delay: 0.1s;
+}
+
+.reveal-delay-2 {
+  transition-delay: 0.2s;
+}
+
+.reveal-delay-3 {
+  transition-delay: 0.3s;
+}
+
+.reveal-delay-4 {
+  transition-delay: 0.4s;
+}
+
+.reveal-delay-5 {
+  transition-delay: 0.5s;
+}
+
+/* --- WCAG 2.2 Vestibular Safety (Prefers-Reduced-Motion) --- */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal-on-scroll,
+  .scroll-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* ================================================
+   GLOBAL MARK / HIGHLIGHT OVERRIDE
+   Replaces browser-default Schulbuch-Gelb with
+   brand-consistent orange accent tint.
+   Used across Steps, FundingTypes, and FAQ.
+   ================================================ */
+mark[data-geo="fact"] {
+  background: rgba(255, 107, 53, 0.12);
+  color: inherit;
+  border-radius: 3px;
+  padding: 0 2px;
+  font-style: inherit;
+}

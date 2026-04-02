@@ -1,0 +1,88 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Datenschutzerklärung | Albatros Services" description="Datenschutzerklärung von Albatros Services – Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO durch die upgrade4you GmbH.">
+  <div class="container section legal-section">
+    <h1 class="section-title">Datenschutzerklärung</h1>
+    <p class="legal-subtitle">Informationen zur Verarbeitung personenbezogener Daten</p>
+    
+    <div class="legal-content">
+      <h2>1. Datenschutz auf einen Blick</h2>
+      <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.</p>
+      
+      <h2>2. Verantwortliche Stelle</h2>
+      <p><strong>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</strong><br>
+      Die Datenverarbeitung auf dieser Website erfolgt durch die upgrade4you GmbH. Deren Kontaktdaten sowie die gesetzlichen Vertreter können Sie dem Impressum dieser Website entnehmen.</p>
+      
+      <h2>3. Wie erfassen wir Ihre Daten?</h2>
+      <p>Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.B. um Daten handeln, die Sie in das Formular zur Potenzialanalyse eingeben.</p>
+      
+      <h2>4. Umgang mit Kontaktangaben</h2>
+      <p>Nehmen Sie mit uns durch angebotene Kontaktmöglichkeiten Verbindung auf, werden Ihre Angaben (Firma, Name, E-Mail, Telefon, Nachricht) gespeichert, damit auf diese zur Bearbeitung und Beantwortung Ihrer potenziellen Förderanfrage zurückgegriffen werden kann. Ohne Ihre Einwilligung werden diese Daten nicht an Dritte weitergegeben. Rechtsgrundlage hierfür ist Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen) bzw. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der effektiven Bearbeitung der Anfragen).</p>
+      <p>Wir löschen diese Anfragen, sofern diese nicht mehr erforderlich sind. Wir überprüfen die Erforderlichkeit alle zwei Jahre; ferner gelten die gesetzlichen Archivierungspflichten.</p>
+      
+      <h2>5. Ihre Rechte als Nutzer: Auskunft, Berichtigung und Löschung</h2>
+      <p>Sie haben als Nutzer das Recht, auf Antrag eine kostenlose Auskunft darüber zu erhalten, welche personenbezogenen Daten über Sie gespeichert wurden. Sie haben außerdem das Recht auf Berichtigung falscher Daten, auf Datenübertragbarkeit und auf die Verarbeitungseinschränkung oder Löschung Ihrer personenbezogenen Daten.</p>
+      <p>Sollten Sie von diesen Rechten Gebrauch machen wollen, wenden Sie sich bitte an die im Impressum aufgeführten Kontaktwege.</p>
+      
+      <h2>6. Übergeordnete Datenschutzerklärung</h2>
+      <p>Albatros Services ist eine Marke der upgrade4you GmbH. Ausführliche Informationen zum Datenschutz, zu allgemeinen Webtechnologien, Hosting, Cookies, externen Datenschutzbeauftragten und weiteren rechtlichen Details entnehmen Sie bitte der vollständigen und übergeordneten Datenschutzerklärung unserer <a href="https://upgrade4you.de/datenschutz" target="_blank" rel="noopener noreferrer">Hauptdomain upgrade4you.de</a>.</p>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .legal-section {
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+    min-height: 60vh;
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Prevent global hero-scale h1 (up to 4.5rem) on legal pages */
+  .legal-section .section-title {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    margin-bottom: 1rem;
+    text-align: left;
+    letter-spacing: -0.01em;
+  }
+  .legal-subtitle {
+    color: var(--c-text-muted, #6b7280);
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-lg);
+  }
+  .legal-section .section-title::after {
+    display: none;
+  }
+  .legal-content {
+    background-color: var(--c-surface);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+  }
+  .legal-content h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--c-primary-dark);
+    border-bottom: 1px solid var(--c-border);
+    padding-bottom: 0.25rem;
+  }
+  .legal-content h2:first-of-type {
+    margin-top: 0;
+  }
+  .legal-content p {
+    color: var(--c-text);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  .legal-content a {
+    color: var(--c-primary);
+    text-decoration: underline;
+  }
+  .legal-content a:hover {
+    color: var(--c-accent);
+  }
+</style>

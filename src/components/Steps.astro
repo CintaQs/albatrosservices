@@ -1,0 +1,179 @@
+---
+---
+<section id="ablauf" class="steps-section section">
+  <div class="container container-narrow">
+    <div class="section-header">
+      <h2 class="section-title reveal-on-scroll">Wir geben unseren Kunden immer mehr, als sie erwarten</h2>
+      <p class="section-subtitle reveal-on-scroll">Ihr Ablauf mit dem Team von Albatros Services</p>
+    </div>
+    
+    <div class="steps-grid" itemscope itemtype="https://schema.org/ItemList">
+      <div class="step-card reveal-on-scroll" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <div class="step-header">
+          <div class="step-number" itemprop="position">01</div>
+          <h3 itemprop="name">Potenzialanalyse</h3>
+        </div>
+        <div class="step-content">
+            <p itemprop="description">Schnelle, qualifizierte Prüfung und Bewertung vorhandener Fördermöglichkeiten. <mark data-geo="fact">Keine Einschränkung von Berufsbranchen, Geschäftsbereichen oder Hierarchieebenen.</mark></p>
+        </div>
+      </div>
+      
+      <div class="step-card reveal-on-scroll reveal-delay-1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <div class="step-header">
+          <div class="step-number" itemprop="position">02</div>
+          <h3 itemprop="name">Fristgerechte Antragstellung</h3>
+        </div>
+        <div class="step-content">
+            <p itemprop="description">Auswahl der idealen Förderträger bundesweit. Sorgfältige Aufbereitung und <mark data-geo="fact">punktgenaue Einreichung aller erforderlichen Unterlagen</mark> unter Berücksichtigung regionaler Besonderheiten.</p>
+        </div>
+      </div>
+      
+      <div class="step-card reveal-on-scroll reveal-delay-2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <div class="step-header">
+          <div class="step-number" itemprop="position">03</div>
+          <h3 itemprop="name">Behörden-Kommunikation</h3>
+        </div>
+        <div class="step-content">
+            <p itemprop="description"><mark data-geo="fact">Komplette Abstimmung und strategische Verhandlung mit den zuständigen Behörden.</mark> Regelmäßiges Kundenreporting zum tagesaktuellen Status Ihrer Förderanfragen.</p>
+        </div>
+      </div>
+      
+      <div class="step-card reveal-on-scroll reveal-delay-3" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <div class="step-header">
+          <div class="step-number" itemprop="position">04</div>
+          <h3 itemprop="name">Maximale Ausschöpfung</h3>
+        </div>
+        <div class="step-content">
+            <p itemprop="description"><mark data-geo="fact">Erfolgreiche Realisierung der maximalen Förderhöhe</mark> sowie juristische Prüfung aller Bescheide – inklusive sämtlicher finaler Schluss- und Weiterbeschäftigungserklärungen.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .steps-section {
+    background-color: var(--c-surface); /* Clean white section */
+    position: relative;
+    overflow: hidden;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2; /* Content immune to background mesh isolation */
+  }
+  
+  /* The 2x2 AAA Matrix */
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    position: relative;
+    z-index: 2;
+  }
+  
+
+
+  .step-card {
+    background: var(--c-bg);
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+    position: relative;
+    transition: all var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    z-index: 3;
+  }
+  
+  /* Kinematic Progress Bar Injection */
+  .step-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 0%;
+    background: linear-gradient(90deg, #FF6B35 0%, #E65A28 100%);
+    transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .step-card:hover::after {
+    width: 100%;
+  }
+  
+  .step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(0, 75, 135, 0.1);
+  }
+  
+  .step-number {
+    width: 56px;
+    height: 56px;
+    background: rgba(0, 75, 135, 0.05);
+    color: var(--c-primary);
+    font-size: 1.75rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 0;
+    border: 1px solid rgba(0, 75, 135, 0.1);
+    font-family: var(--font-heading);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    flex-shrink: 0;
+  }
+
+  .step-card:hover .step-number {
+    background: var(--c-primary);
+    color: #ffffff;
+    transform: scale(1.05);
+  }
+  
+  .step-content {
+    flex-grow: 1;
+  }
+  
+  .step-header {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .step-header h3 {
+    margin: 0;
+  }
+  
+  .step-card p {
+    margin: 0;
+    color: var(--c-text-muted);
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+
+
+  @media (max-width: 768px) {
+    .steps-grid {
+      grid-template-columns: 1fr;
+    }
+    .step-card {
+      padding: 1.75rem; /* Prevents typographic compression on mobile displays */
+    }
+    .step-header {
+      gap: 1rem;
+    }
+    .step-number {
+        width: 48px;
+      height: 48px;
+      font-size: 1.5rem;
+    }
+  }
+</style>

@@ -1,0 +1,263 @@
+---
+---
+<section id="beispiele" class="examples-section section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title reveal-on-scroll">Beispiele für Fördermöglichkeiten</h2>
+      <div class="section-intro">
+        <p class="intro-lead">Profitiert Ihr Unternehmen bereits von Lohnkosten- oder Eingliederungszuschüssen?</p>
+        <p class="intro-text">„Zuschüsse“ sind per Definition eine nicht rückzahlbare Zuwendung ohne direkte Gegenleistung und damit die beliebteste Förderungsart für Unternehmer bei Personaleinstellungen.</p>
+      </div>
+    </div>
+    
+    <div class="cards-grid">
+      <div class="card glass-panel reveal-on-scroll reveal-delay-1">
+        <div class="card-image-wrapper">
+          <picture>
+  <source srcset="/images/it_spezialistin_1774037584010.webp" type="image/webp" />
+  <img src="/images/it_spezialistin_1774037584010.png" alt="IT-Spezialistin / Ingenieur" width="600" height="400" loading="lazy">
+</picture>
+        </div>
+        <div class="card-content">
+          <h3>Führungskraft<br><small>IT-Spezialistin / Ingenieur</small></h3>
+          <div class="card-body">
+            <div class="calc-row"><span>Bruttogehalt:</span> <strong>5.700 €</strong></div>
+            <div class="calc-row"><span>zzgl. 20 %:</span> <strong>1.140 €</strong></div>
+            <div class="calc-row highlight"><span>Förderhöhe (30 %):</span> <strong class="badge-fintech">mtl. 2.052 €</strong></div>
+            <div class="calc-row"><span>Förderzeitraum:</span> <strong>3 Monate</strong></div>
+          </div>
+          <div class="card-footer">
+            <span>EGZ (gesamt) =</span>
+            <strong class="total-value text-accent">6.156 €</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="card glass-panel reveal-on-scroll reveal-delay-2">
+        <div class="card-image-wrapper">
+          <picture>
+  <source srcset="/images/elektriker_1774037599563.webp" type="image/webp" />
+  <img src="/images/elektriker_1774037599563.png" alt="Elektrotechnik / Handwerk" width="600" height="400" loading="lazy">
+</picture>
+        </div>
+        <div class="card-content">
+          <h3>Fachkraft<br><small>Elektrotechnik / Handwerk</small></h3>
+          <div class="card-body">
+            <div class="calc-row"><span>Bruttogehalt:</span> <strong>3.600 €</strong></div>
+            <div class="calc-row"><span>zzgl. 20 %:</span> <strong>720 €</strong></div>
+            <div class="calc-row highlight"><span>Förderhöhe (40 %):</span> <strong class="badge-fintech">mtl. 1.728 €</strong></div>
+            <div class="calc-row"><span>Förderzeitraum:</span> <strong>3 Monate</strong></div>
+          </div>
+          <div class="card-footer">
+            <span>EGZ (gesamt) =</span>
+            <strong class="total-value text-accent">5.184 €</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="card glass-panel reveal-on-scroll reveal-delay-3">
+        <div class="card-image-wrapper">
+          <picture>
+  <source srcset="/images/pflegekraft_1774037614226.webp" type="image/webp" />
+  <img src="/images/pflegekraft_1774037614226.png" alt="Angelernt / Pflege" width="600" height="400" loading="lazy">
+</picture>
+        </div>
+        <div class="card-content">
+          <h3>Hilfskraft<br><small>Angelernt / Pflege</small></h3>
+          <div class="card-body">
+            <div class="calc-row"><span>Bruttogehalt:</span> <strong>2.300 €</strong></div>
+            <div class="calc-row"><span>zzgl. 20 %:</span> <strong>460 €</strong></div>
+            <div class="calc-row highlight"><span>Förderhöhe (30 %):</span> <strong class="badge-fintech">mtl. 828 €</strong></div>
+            <div class="calc-row"><span>Förderzeitraum:</span> <strong>4 Monate</strong></div>
+          </div>
+          <div class="card-footer">
+            <span>EGZ (gesamt) =</span>
+            <strong class="total-value text-accent">3.312 €</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .examples-section {
+    background-color: var(--c-surface);
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+  }
+  
+
+  
+  .section-intro {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .intro-lead {
+    font-size: 1.25rem;
+    color: var(--c-text-muted);
+    margin: 0;
+  }
+  
+  .intro-text {
+    font-size: 1.1rem;
+    color: var(--c-text);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: var(--c-bg);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+    border: 1px solid var(--c-border);
+  }
+  
+  .glass-panel {
+    /* Removed glassmorphism to favor solid B2B structural contrast */
+    box-shadow: var(--shadow-sm);
+  }
+
+  .card-image-wrapper {
+    width: 100%;
+    aspect-ratio: 3/2;
+    height: auto;
+    overflow: hidden;
+    border-bottom: 2px solid rgba(255, 107, 53, 0.3);
+  }
+  
+  .card-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+  }
+  
+  .card:hover .card-image-wrapper img {
+    transform: scale(1.08); /* Cinematographic slow zoom */
+  }
+  
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(0, 75, 135, 0.1);
+  }
+  
+  .card-content {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .card h3 {
+    margin-bottom: 2rem;
+  }
+  
+  .card h3 small {
+    color: var(--c-accent);
+    font-weight: 500;
+    font-size: 1rem;
+    display: block;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .calc-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed var(--c-border);
+    font-size: 1.05rem;
+    color: var(--c-text);
+  }
+  
+  .calc-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  
+  .calc-row strong {
+    color: var(--c-primary-dark);
+    font-weight: 600;
+  }
+  
+  .highlight {
+    background-color: rgba(255, 107, 53, 0.08);
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 0.5rem -1rem;
+    border-bottom: none;
+    border-left: 3px solid var(--c-accent);
+    flex-wrap: wrap; /* CRITICAL: Prevent badge overlap on mobile */
+    gap: 0.5rem;
+  }
+  
+  .badge-fintech {
+    background: var(--c-accent);
+    color: #ffffff !important;
+    padding: 0.35rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 800 !important;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+  }
+
+  .card-footer {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--c-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--c-text);
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .total-value {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--c-accent);
+  }
+  
+  @media (max-width: 768px) {
+    .examples-section {
+      padding: 4rem 0;
+    }
+    .cards-grid {
+      grid-template-columns: 1fr;
+    }
+    .card-content {
+      padding: 1.5rem;
+    }
+  }
+</style>

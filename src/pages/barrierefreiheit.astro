@@ -1,0 +1,112 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Barrierefreiheitserklärung | Albatros Services" description="Erklärung zur Barrierefreiheit des Webangebots albatrosservices.de gemäß WCAG 2.1 Stufe AA durch upgrade4you GmbH.">
+  <div class="container section legal-section">
+    <h1 class="section-title">Erklärung zur Barrierefreiheit</h1>
+    <p class="legal-subtitle">Digitale Zugänglichkeit gemäß WCAG 2.1 Konformitätsstufe AA</p>
+
+    <div class="legal-content">
+      <p>
+        Albatros Services (upgrade4you GmbH) ist bemüht, das Webangebot unter
+        <strong>albatrosservices.de</strong> im Einklang mit den nationalen Rechtsvorschriften
+        zur Umsetzung der <abbr title="Web Content Accessibility Guidelines">WCAG 2.1</abbr>
+        (Richtlinien für barrierefreie Webinhalte) barrierefrei zugänglich zu machen.
+      </p>
+
+      <h2>Stand der Vereinbarkeit mit den Anforderungen</h2>
+      <p>
+        Diese Website ist mit den Anforderungen der WCAG 2.1 Konformitätsstufe AA
+        <strong>weitgehend vereinbar</strong>. Die nachfolgend aufgeführten Inhalte sind
+        noch nicht vollständig barrierefrei:
+      </p>
+      <ul>
+        <li>Das Kontaktformular verfügt über grundlegende ARIA-Annotierung (aria-required, aria-live). Eine vollständige Formular-Landmark-Auszeichnung befindet sich in Bearbeitung.</li>
+      </ul>
+
+      <h2>Erstellung dieser Erklärung</h2>
+      <p>Diese Erklärung wurde am <strong>23. März 2026</strong> erstellt (Selbstbewertung).</p>
+
+      <h2>Feedback und Kontakt</h2>
+      <p>
+        Wenn Sie Barrieren auf dieser Website festgestellt haben, wenden Sie sich bitte an uns:
+      </p>
+      <p>
+        <strong>Albatros Services</strong><br>
+        E-Mail: <a href="mailto:personalprojekt@albatrosservices.de">personalprojekt@albatrosservices.de</a><br>
+        Telefon: 030 / 2325387-76
+      </p>
+      <p>
+        Wir werden Ihren Hinweis so schnell wie möglich bearbeiten und Ihnen eine
+        Rückmeldung zukommen lassen.
+      </p>
+
+      <h2>Schlichtungsverfahren</h2>
+      <p>
+        Wenn Sie der Ansicht sind, dass Ihre Beschwerde nicht ausreichend berücksichtigt
+        wurde, können Sie sich an die zuständige Schlichtungsstelle wenden. Die
+        allgemeine Schlichtungsstelle des Bundes (<a href="https://www.schlichtung.eu/" target="_blank" rel="noopener noreferrer">Zentrum für Schlichtung e.V.</a>)
+        bietet ein Verfahren für Streitigkeiten im Bereich der Barrierefreiheit an.
+      </p>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .legal-section {
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+    min-height: 60vh;
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Clamp h1 — prevent oversized break vs. Impressum/Datenschutz */
+  .legal-section .section-title {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    margin-bottom: 1rem;
+    text-align: left;
+    letter-spacing: -0.01em;
+  }
+  .legal-section .section-title::after {
+    display: none;
+  }
+  .legal-subtitle {
+    color: var(--c-text-muted, #6b7280);
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-lg);
+  }
+  .legal-content {
+    background-color: var(--c-surface);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+  }
+  .legal-content h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--c-primary-dark);
+    border-bottom: 1px solid var(--c-border);
+    padding-bottom: 0.25rem;
+  }
+  .legal-content h2:first-of-type {
+    margin-top: 0;
+  }
+  .legal-content p, .legal-content li {
+    color: var(--c-text);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  .legal-content ul {
+    padding-left: 1.5rem;
+  }
+  .legal-content a {
+    color: var(--c-primary);
+    text-decoration: underline;
+  }
+  .legal-content a:hover {
+    color: var(--c-accent);
+  }
+</style>

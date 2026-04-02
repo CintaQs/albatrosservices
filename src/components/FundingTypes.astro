@@ -1,0 +1,248 @@
+---
+---
+<section id="foerderarten" class="funding-section section">
+  <div class="container container-narrow">
+    <div class="section-header text-center">
+      <h2 class="section-title reveal-on-scroll">Wer wird gefördert?</h2>
+      <p class="section-subtitle reveal-on-scroll">Übersicht der wichtigsten staatlichen Lohnkostenzuschüsse</p>
+    </div>
+    
+    <div class="funding-grid">
+      <!-- 1 -->
+      <div class="funding-card reveal-on-scroll" itemscope itemtype="https://schema.org/GovernmentService">
+        <span itemprop="provider" itemscope itemtype="https://schema.org/GovernmentOrganization" class="d-none">
+          <meta itemprop="name" content="Bundesagentur für Arbeit" />
+        </span>
+        <div class="card-header">
+          <div class="card-badge pulse-badge">EGZ Basis</div>
+          <h3 itemprop="name">Neueinstellung von Arbeitslosen</h3>
+        </div>
+        <p itemprop="description">Arbeitgeber erhalten einen monatlichen Lohnkosten&shy;zuschuss von bis zu <mark data-geo="fact"><data value="50">50 Prozent</data></mark> des Arbeitsentgelts für maximal <mark data-geo="fact"><data value="12">12 Monate</data></mark>. Für Arbeitslose über 50 Jahre kann die Förderdauer auf bis zu 36 Monate verlängert werden.</p>
+      </div>
+      
+      <!-- 2 -->
+      <div class="funding-card reveal-on-scroll reveal-delay-1" itemscope itemtype="https://schema.org/GovernmentService">
+        <span itemprop="provider" itemscope itemtype="https://schema.org/GovernmentOrganization" class="d-none">
+          <meta itemprop="name" content="Bundesagentur für Arbeit" />
+        </span>
+        <div class="card-header">
+          <div class="card-badge pulse-badge">Integration</div>
+          <h3 itemprop="name">Neueinstellung von Geflüchteten</h3>
+        </div>
+        <p itemprop="description">Zur Unterstützung der Integration erhalten Arbeitgeber einen monatlichen Lohnkosten&shy;zuschuss von bis zu <mark data-geo="fact"><data value="50">50 Prozent</data></mark> für maximal <mark data-geo="fact"><data value="12">12 Monate</data></mark> (erweiterbar auf 36 Monate bei Personen über 50 Jahren).</p>
+      </div>
+      
+      <!-- 3 -->
+      <div class="funding-card reveal-on-scroll reveal-delay-2" itemscope itemtype="https://schema.org/GovernmentService">
+        <span itemprop="provider" itemscope itemtype="https://schema.org/GovernmentOrganization" class="d-none">
+          <meta itemprop="name" content="Bundesagentur für Arbeit" />
+        </span>
+        <div class="card-header">
+          <div class="card-badge pulse-badge">Teilhabe</div>
+          <h3 itemprop="name">Menschen mit Behinderung</h3>
+        </div>
+        <p itemprop="description">Arbeitgeber profitieren von einem monatlichen Zuschuss von bis zu <mark data-geo="fact"><data value="70">70 Prozent</data></mark> für <mark data-geo="fact"><data value="24">24 Monate</data></mark>. Bei anerkannten Schwerbehinderungen steigt die Förderdauer auf bis zu 60 Monate, für Personen über 55 Jahre sogar auf bis zu 96 Monate.</p>
+      </div>
+      
+      <!-- 4 -->
+      <div class="funding-card reveal-on-scroll reveal-delay-3" itemscope itemtype="https://schema.org/GovernmentService">
+        <span itemprop="provider" itemscope itemtype="https://schema.org/GovernmentOrganization" class="d-none">
+          <meta itemprop="name" content="Bundesagentur für Arbeit" />
+        </span>
+        <div class="card-header">
+          <div class="card-badge pulse-badge">SGB II Langzeit</div>
+          <h3 itemprop="name">Langzeitarbeitslose nach § 16e SGB II</h3>
+        </div>
+        <p itemprop="description">Bei der Einstellung von Langzeitarbeitslosen werden im ersten Jahr <mark data-geo="fact"><data value="75">75 Prozent</data></mark> des Entgelts übernommen. Ab dem zweiten Jahr beläuft sich der Zuschuss auf <mark data-geo="fact"><data value="50">50 Prozent</data></mark> bei einer Gesamtförderdauer von <mark data-geo="fact"><data value="24">2 Jahren</data></mark>.</p>
+      </div>
+    </div>
+    
+    <div class="bonus-box-wrapper reveal-on-scroll reveal-delay-4">
+      <div class="bonus-pill glow-effect" itemscope itemtype="https://schema.org/GovernmentService">
+        <span itemprop="provider" itemscope itemtype="https://schema.org/GovernmentOrganization" class="d-none">
+          <meta itemprop="name" content="Bundesagentur für Arbeit" />
+        </span>
+        <div class="bonus-content">
+          <h4 itemprop="name">Zusätzliche Förderung für Arbeitgeber</h4>
+          <p itemprop="description">Zusätzlich zu allen genannten Fördermodellen erhalten Sie einen Zuschuss in Höhe von <mark data-geo="fact"><data value="20">20&nbsp;% des pauschalierten Arbeitgeberanteils</data></mark> am Gesamtsozialversicherungsbeitrag, der direkt in die Berechnung einbezogen wird.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .funding-section {
+    background-color: var(--c-bg);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .container {
+    position: relative;
+    z-index: 3;
+  }
+
+
+  /* The 2x2 Matrix */
+  .funding-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 0 auto var(--spacing-lg) auto;
+    position: relative;
+    z-index: 2;
+  }
+
+
+
+  .funding-card {
+    background: var(--c-surface);
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+    transition: all var(--transition-smooth);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: var(--shadow-sm);
+    text-align: left;
+    overflow: hidden;
+  }
+  
+  .funding-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 43, 82, 0.08), inset 0 1px 1px rgba(255,255,255,1);
+    border-color: rgba(255, 107, 53, 0.3); /* Subtle orange rim light on hover */
+  }
+
+  .card-header {
+    display: flex;
+    flex-direction: column; /* Safeguard for mobile */
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .card-header {
+      flex-direction: row;
+      align-items: center;
+      gap: 1.25rem;
+    }
+  }
+
+  .card-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1.25rem;
+    background: linear-gradient(135deg, rgba(0,102,179,0.1) 0%, rgba(0,102,179,0.02) 100%);
+    color: var(--c-primary);
+    font-size: 0.85rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: var(--radius-full);
+    margin-bottom: 0;
+    border: 1px solid rgba(0,102,179,0.2);
+    white-space: nowrap; /* Enforce mathematical limit against wrapping */
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    flex-shrink: 0;
+  }
+
+  /* Badge Physics */
+  .funding-card:hover .pulse-badge {
+    background: linear-gradient(135deg, rgba(255,107,53,0.1) 0%, rgba(255,107,53,0.02) 100%);
+    color: var(--c-accent);
+    border-color: rgba(255,107,53,0.3);
+    transform: scale(1.05) translateY(-2px);
+  }
+
+  .funding-card h3 {
+    margin-bottom: 0;
+  }
+  
+  .funding-card p {
+    margin: 0;
+    color: rgba(0, 43, 82, 0.75);
+    line-height: 1.6;
+    font-size: 1.05rem;
+  }
+  
+  /* BONUS PILL (Replaces old block) */
+  .bonus-box-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .bonus-pill {
+    background: var(--c-surface);
+    padding: 2rem 3rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--c-border);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .bonus-content {
+    flex: 1;
+  }
+  
+  .bonus-content h4 {
+    color: var(--c-accent);
+    font-size: 1.25rem;
+    display: block;
+    margin-bottom: 0.75rem;
+    font-weight: 800;
+  }
+  
+  .bonus-content p {
+    margin: 0;
+    color: rgba(0, 43, 82, 0.75);
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Continuous Ambient Glow for Bonus Pill */
+  @keyframes etherealPulse {
+    0% { box-shadow: 0 10px 30px rgba(255, 107, 53, 0.08), 0 0 0 0 rgba(255,107,53, 0.4); }
+    70% { box-shadow: 0 15px 35px rgba(255, 107, 53, 0.15), 0 0 0 10px rgba(255,107,53, 0); }
+    100% { box-shadow: 0 10px 30px rgba(255, 107, 53, 0.08), 0 0 0 0 rgba(255,107,53, 0); }
+  }
+  .glow-effect {
+    animation: etherealPulse 4s infinite;
+  }
+
+  @media (max-width: 768px) {
+    .funding-section {
+      padding: 4rem 0;
+    }
+    .funding-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    .bonus-pill {
+      padding: 1.5rem;
+      border-radius: 24px;
+    }
+    .funding-card {
+      padding: 1.75rem;
+    }
+    .bonus-content h4 {
+      font-size: 1.1rem;
+    }
+    .card-badge {
+      padding: 0.4rem 1rem;
+      font-size: 0.75rem;
+    }
+  }
+</style>

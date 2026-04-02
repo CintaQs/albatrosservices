@@ -1,0 +1,422 @@
+---
+const IconTrendingDown = `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>`;
+const IconClock = `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>`;
+const IconHandshake = `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>`;
+const IconLayers = `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>`;
+const IconAward = `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>`;
+const IconLandmark = `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 22 7"></polygon><line x1="6" y1="22" x2="6" y2="7"></line><line x1="10" y1="22" x2="10" y2="7"></line><line x1="14" y1="22" x2="14" y2="7"></line><line x1="18" y1="22" x2="18" y2="7"></line><line x1="2" y1="22" x2="22" y2="22"></line><line x1="2" y1="19" x2="22" y2="19"></line></svg>`;
+const IconBarChart = `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M7 17v-4"></path><path d="M12 17V9"></path><path d="M17 17v-6"></path></svg>`;
+---
+<section id="vorteile" class="why-us-section section">
+<div class="container">
+    <div class="section-header text-center">
+      <h2 class="section-title reveal-on-scroll">Unsere Erfahrung - Ihr Vorteil</h2>
+      <p class="section-subtitle reveal-on-scroll">Warum Albatros Services der perfekte Partner für Ihre Fördermittel ist</p>
+    </div>
+    
+    <div class="bento-grid">
+      <!-- 1. Stat Box (2x2) -->
+      <div class="bento-card bento-large stat-card reveal-on-scroll">
+        <div class="stat-content-wrapper">
+          <div class="stat-number text-accent">&gt; 92%</div>
+          <div class="card-bottom">
+            <h3>Überragende Erfolgsquote</h3>
+            <p>Bei über 6.500 erfolgreich realisierten Förderanträgen für unsere Mandanten.</p>
+            <p class="honorierung-quote">Weil der Wert unserer Arbeit überzeugt ist, erfolgt die <mark data-geo="fact">Honorierung</mark> in jedem Fall rein erfolgsabhängig.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Highlight Box (4x1) -->
+      <div class="bento-card bento-wide highlight-card reveal-on-scroll reveal-delay-1">
+        <div class="bento-icon-wrapper">
+          <div class="icon" set:html={IconHandshake}></div>
+        </div>
+        <div class="card-bottom">
+          <h3>Rein erfolgsabhängiger Service</h3>
+          <p>Ohne jegliches Vorab-Risiko für Ihr Unternehmen. Unsere Vergütung erfolgt stets erfolgsbasiert – wir verdienen nur, wenn Sie Geld erhalten.</p>
+        </div>
+      </div>
+      
+      <!-- 3. Personalkosten (2x1) -->
+      <div class="bento-card bento-small reveal-on-scroll reveal-delay-2">
+        <div class="card-header">
+          <div class="bento-icon-wrapper">
+            <div class="icon" set:html={IconTrendingDown}></div>
+          </div>
+          <h3>Personalkosten spürbar senken</h3>
+        </div>
+        <p>Lohnkostenzuschüsse reduzieren Ihre tatsächlichen Personalausgaben – direkt vom Staat erstattet, ohne Eigenanteil.</p>
+      </div>
+      
+      <!-- 4. Kein Aufwand (2x1) -->
+      <div class="bento-card bento-small reveal-on-scroll reveal-delay-3">
+        <div class="card-header">
+          <div class="bento-icon-wrapper">
+            <div class="icon" set:html={IconClock}></div>
+          </div>
+          <h3>Ihren Aufwand gegen null</h3>
+        </div>
+        <p>Wir übernehmen alle bürokratischen Schritte von der Antragstellung bis zur Auszahlung – Ihre HR-Abteilung bleibt entlastet.</p>
+      </div>
+      
+      <!-- 5. A-Z (3x1) -->
+      <div class="bento-card bento-medium reveal-on-scroll">
+        <div class="card-header">
+          <div class="bento-icon-wrapper">
+            <div class="icon" set:html={IconLayers}></div>
+          </div>
+          <h3>Abwicklung von A bis Z</h3>
+        </div>
+        <p>Von der Erstprüfung bis zur Auszahlung: ein Ansprechpartner, ein strukturierter Prozess – kein Koordinationsaufwand für Ihr Unternehmen.</p>
+      </div>
+      
+      <!-- 6. Reporting (3x1) -->
+      <div class="bento-card bento-medium reveal-on-scroll reveal-delay-1">
+        <div class="card-header">
+          <div class="bento-icon-wrapper">
+            <div class="icon" set:html={IconBarChart}></div>
+          </div>
+          <h3>Volle Transparenz</h3>
+        </div>
+        <p>Regelmäßige Updates halten Sie stets über den Status Ihrer Anträge informiert – kein Rätselraten, volle Nachvollziehbarkeit.</p>
+      </div>
+      
+      <!-- 7. 15 Jahre (3x1) -->
+      <div class="bento-card bento-medium reveal-on-scroll reveal-delay-2">
+        <div class="card-header">
+          <div class="bento-icon-wrapper">
+            <div class="icon" set:html={IconAward}></div>
+          </div>
+          <h3>Über 15 Jahre Fokus</h3>
+        </div>
+        <p>Spezialisierung ausschließlich auf Fördermittelrecht und staatliche Lohnkostenzuschüsse – kein Generalanbieter, sondern echter Experte.</p>
+      </div>
+      
+      <!-- 8. Netzwerk (3x1) -->
+      <div class="bento-card bento-medium reveal-on-scroll reveal-delay-3">
+        <div class="card-header">
+          <div class="bento-icon-wrapper">
+            <div class="icon" set:html={IconLandmark}></div>
+          </div>
+          <h3>Bundesweites Behördennetzwerk</h3>
+        </div>
+        <p>Langjährige Zusammenarbeit mit Arbeitsverwaltungen und Förderstellen deutschlandweit – für einen reibungslosen Prozess ohne Rückfragen.</p>
+      </div>
+    </div>
+    
+    <div class="cta-pill-wrapper reveal-on-scroll">
+      <div class="cta-pill">
+        <span class="cta-text">Bereits über 6.500 erfolgreiche Verfahren. Nutzen Sie unser Expertenwissen <mark data-geo="fact">komplett ohne Vorab-Kosten</mark>.</span>
+        <a href="#kontakt" class="btn btn-primary">Jetzt kostenfrei prüfen lassen</a>
+      </div>
+    </div>
+</div>
+</section>
+
+<style>
+  .why-us-section {
+    background-color: var(--c-bg);
+    position: relative;
+    overflow: hidden;
+  }
+  
+
+  .section-header, .bento-grid, .cta-pill-wrapper {
+    position: relative;
+    z-index: 1; /* Keep content isolated */
+  }
+
+  /* TRUE BENTO GRID */
+  .bento-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(220px, auto); /* Cards can grow taller if content requires it */
+    gap: 1.5rem; 
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  /* CARD LAYOUT: icon + title in a row, text below */
+  .bento-card {
+    background: var(--c-surface);
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius-md);
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    box-shadow: var(--shadow-sm);
+    position: relative;
+    overflow: hidden;
+    transition: transform var(--transition-smooth), box-shadow var(--transition-smooth), border-color var(--transition-smooth);
+  }
+
+  /* Card Header: Icon left, Title right */
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+  .card-header h3 {
+    margin: 0;
+  }
+
+  /* Paragraph directly inside .bento-card (after .card-header) */
+  .bento-card > p {
+    font-size: 1rem;
+    color: var(--c-text-muted);
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .bento-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(0, 75, 135, 0.15);
+  }
+
+  /* Elegant Icons */
+  .bento-card .bento-icon-wrapper {
+    background: var(--c-surface);
+    border: 1px solid var(--c-border);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.4s ease;
+  }
+  
+  .bento-card:hover .bento-icon-wrapper {
+    background: #F0F4F8; /* Subtle blue shift on hover */
+    transform: scale(1.05);
+  }
+
+  /* SPAN LOGIC */
+  .bento-large { grid-column: span 2; grid-row: span 2; }
+  .bento-wide { grid-column: span 4; grid-row: span 1; }
+  .bento-small { grid-column: span 2; grid-row: span 1; padding: 2rem; }
+  .bento-medium { grid-column: span 3; grid-row: span 1; }
+  
+  /* TYPOGRAPHY INSIDE CARDS */
+  .card-bottom {
+    width: 100%;
+  }
+  .card-bottom h3 {
+    margin-bottom: 0.5rem;
+  }
+  .card-bottom p {
+    font-size: 1.05rem;
+    color: var(--c-text-muted);
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .honorierung-quote {
+    margin-top: 1.25rem !important;
+    padding: 1rem 1.25rem;
+    border-left: 3px solid var(--c-accent);
+    background: rgba(226, 91, 32, 0.04);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    font-size: 0.95rem !important;
+    font-style: italic;
+    color: var(--c-text-muted) !important;
+    line-height: 1.6 !important;
+  }
+
+  .honorierung-quote strong {
+    color: var(--c-accent);
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  /* ICONS */
+  .bento-icon-wrapper {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    background: #FAFAFB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--c-primary-dark);
+    flex-shrink: 0;
+  }
+  .bento-icon-wrapper .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+  }
+  .bento-icon-wrapper svg {
+    width: 28px;
+    height: 28px;
+    display: block;
+    margin: auto;
+  }
+  
+  /* HIGHLIGHT CARD (ERFOLGSABHÄNGIG) */
+  .highlight-card {
+    background: var(--c-surface); /* Clean white, same as other cards */
+    border: 1px solid var(--c-border);
+    border-left: 4px solid var(--c-accent); /* Strong orange accent — intentional, not accidental */
+  }
+  .highlight-card .bento-icon-wrapper {
+    background: var(--c-accent);
+    border-color: var(--c-accent);
+    color: white;
+  }
+  .highlight-card:hover {
+    border-color: var(--c-border);
+    border-left-color: var(--c-accent);
+  }
+  .highlight-card:hover .bento-icon-wrapper {
+    background: var(--c-accent-hover);
+  }
+
+  @media (min-width: 1025px) {
+    .bento-wide {
+      flex-direction: row;
+      align-items: center; /* Vertically centered */
+      gap: 3rem;
+    }
+    .bento-wide .card-bottom {
+      flex: 1;
+    }
+    .bento-wide .bento-icon-wrapper {
+      margin-bottom: 0;
+      width: 80px;
+      height: 80px;
+      border-radius: 16px;
+    }
+    .bento-wide .bento-icon-wrapper svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  /* STAT CARD (>92%) */
+  .stat-card {
+    background: #F8FBFE; /* Soft blue corporate tint */
+  }
+  .stat-card .stat-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 2rem;
+  }
+  .stat-card h3 {
+    color: var(--c-primary-dark);
+  }
+  .stat-card p {
+    color: var(--c-text-muted);
+  }
+  .stat-number {
+    font-size: clamp(4rem, 6vw, 6rem);
+    font-weight: 800;
+    color: var(--c-accent);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    z-index: 2;
+  }
+
+
+
+
+  /* THE NEW FLOATING CTA PILL */
+  .cta-pill-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+  }
+  .cta-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background: var(--c-surface);
+    padding: 2rem 2.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--c-border);
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .cta-text {
+    display: block;
+    font-size: 1.125rem;
+    color: var(--c-text-muted);
+    max-width: 600px;
+    text-align: left;
+    line-height: 1.4;
+  }
+  .cta-text strong {
+    color: var(--c-primary-dark);
+  }
+  
+  @media (max-width: 1024px) {
+    .bento-grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: auto;
+      gap: 1.25rem;
+    }
+    .bento-small, .bento-medium {
+      grid-column: span 1;
+      grid-row: span 1;
+      padding: 2rem;
+    }
+    .bento-large, .bento-wide {
+      grid-column: span 2;
+      grid-row: span 1;
+      padding: 2.5rem; /* Forces large cards to full width, eliminating the Tablet grid-gap rupture */
+    }
+    .stat-card .stat-content-wrapper {
+      gap: 1.5rem;
+    }
+    .stat-number {
+      margin-bottom: 0;
+    }
+    .bento-icon-wrapper {
+      margin-bottom: 1.5rem;
+    }
+    
+    /* Force organized stack on tablets */
+    .cta-pill {
+      flex-direction: column;
+      text-align: center;
+      gap: 1.5rem;
+      padding: 2rem 3rem;
+    }
+    .cta-text {
+      text-align: center;
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .bento-grid {
+      grid-template-columns: 1fr;
+    }
+    .bento-large, .bento-wide, .bento-small, .bento-medium {
+      grid-column: span 1;
+    }
+    .cta-pill {
+      border-radius: var(--radius-md);
+      padding: 2rem 1.5rem;
+      flex-direction: column;
+      text-align: center;
+      gap: 1.5rem;
+    }
+    .cta-pill .btn {
+      width: 100%;
+    }
+    .cta-text {
+      text-align: center;
+    }
+  }
+
+</style>
