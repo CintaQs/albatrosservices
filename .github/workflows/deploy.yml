@@ -25,13 +25,13 @@ jobs:
       - name: 🏗️ Build Astro Site
         run: npm run build
         
-      - name: 🚀 Deploy via SFTP to Strato
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: 🚀 Deploy via SCP/SFTP to Strato
+        uses: appleboy/scp-action@v0.1.7
         with:
-          server: ${{ secrets.STRATO_HOST }}
+          host: ${{ secrets.STRATO_HOST }}
           username: ${{ secrets.STRATO_USER }}
           password: ${{ secrets.STRATO_PASSWORD }}
-          protocol: sftp
           port: 22
-          local-dir: ./dist/
-          server-dir: /astro-live/
+          source: "dist/*"
+          target: "/"
+          strip_components: 1
