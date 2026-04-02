@@ -153,22 +153,6 @@ h2.section-title::after {
   z-index: 3;
 }
 
-@media (max-width: 768px) {
-  h2.section-title {
-    text-align: left;
-  }
-  h2.section-title::after {
-    margin: 1.5rem 0 0 0; /* Align the underline to the left */
-  }
-  .section-header {
-    text-align: left;
-    align-items: flex-start;
-  }
-  .section-subtitle {
-    text-align: left;
-  }
-}
-
 .section-subtitle {
   font-size: clamp(1.1rem, 2vw, 1.25rem);
   color: var(--c-text-muted);
@@ -183,6 +167,22 @@ p {
   font-size: 1.125rem;
   margin-bottom: 1.5rem;
   color: var(--c-text);
+}
+
+@media (max-width: 768px) {
+  h2.section-title {
+    text-align: left;
+  }
+  h2.section-title::after {
+    margin: 1.5rem 0 0 0; /* Align the underline to the left */
+  }
+  .section-header {
+    text-align: left;
+    align-items: flex-start;
+  }
+  .section-subtitle {
+    text-align: left;
+  }
 }
 
 /* Layout Utilities */
