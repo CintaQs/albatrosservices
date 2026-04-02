@@ -33,4 +33,4 @@ jobs:
           password: ${{ secrets.STRATO_PASSWORD }}
           port: 22
           localDir: ./dist
-          remoteDir: /astro-live
+          remoteDir: /
