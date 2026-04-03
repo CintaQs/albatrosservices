@@ -3,7 +3,7 @@
   "short_name": "Albatros",
   "description": "Lohnkostenzuschüsse als Reingewinn - jeden Monat auf Ihrem Konto.",
   "start_url": "/",
-  "display": "standalone",
+  "display": "browser",
   "background_color": "#F8F9FA",
   "theme_color": "#004B87",
   "icons": [
